@@ -1,0 +1,18 @@
+.rsvpContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #edd9a9;
+    margin: 0 auto;
+}
+
+img {
+    margin:  0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100px;
+    height: 100px;
+}
+
+p{
+    margin-top: 15px;
+}
