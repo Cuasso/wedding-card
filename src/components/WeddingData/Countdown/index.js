@@ -1,78 +1,80 @@
 import classes from './countdown.module.css'
-import { useState, useEffect } from 'react';
+import { CountdownCircleTimer } from "react-countdown-circle-timer";
+import * as dateHelper from './helper'
 
-const Circle = props => (
-    <div className={classes.baseTimer}>
-        <svg className={classes.baseTimerSvg} viewBox={"0 0 100 100"} xmlns="http://www.w3.org/2000/svg">
-            <g className={classes.baseTimerCircle}>
-                <circle className={classes.baseTimerPathElapsed} cx="50" cy="50" r="45" />
-                <path
-                    stroke-dasharray={props.circleDasharray}
-                    class={classes.baseTimerPathRemaining}
-                    d="
-                        M 50, 50
-                        m -45, 0
-                        a 45,45 0 1,0 90,0
-                        a 45,45 0 1,0 -90,0
-                      "
-                ></path>
-            </g>
-        </svg>
-        <span className={classes.baseTimerLabel}>
-            {props.value}
-        </span>
-    </div>
-)
+const timerProps = {
+    isPlaying: true,
+    size: 140,
+    colors: [["#f5d0c3"]],
+    strokeWidth: 2
+};
+
+const renderTime = (dimension, time) => {
+    return (
+        <div className={classes.timeWrapper}>
+            <div className={classes.time}>{time}</div>
+            <div className={classes.dimension}>{dimension}</div>
+        </div>
+    );
+};
 
 const Countdown = () => {
-    const [timerInterval, setTimerInterval] = useState(0);
-    const [circleDasharray, setCircleDasharray] = useState(0);
-    const TIME_LIMIT = 20;
-    const FULL_DASH_ARRAY = 283;
 
-    let timePassed = 0;
-    let timeLeft = TIME_LIMIT;
+    const stratTime = new Date() / 1000;
+    const endTime = new Date(2021, 8, 18,18,30) / 1000;
 
-    useEffect(() => {
-        setInterval(() => {
-
-            // The amount of time passed increments by one
-            timePassed = timePassed += 1;
-            timeLeft = TIME_LIMIT - timePassed;
-            timeLeft = timeLeft > 0 ? timeLeft : 0
-
-            // The time left label is updated
-            setTimerInterval(formatTimeLeft(timeLeft))
-
-            const dasharray = `${(
-                calculateTimeFraction() * FULL_DASH_ARRAY
-            ).toFixed(0)} 283`;
-
-            setCircleDasharray(dasharray)
-
-        }, 1000);
-    }, [])
-
-    const formatTimeLeft = time => {
-        const minutes = Math.floor(time / 60);
-
-        // Seconds are the remainder of the time divided by 60 (modulus operator)
-        let seconds = time % 60;
-
-        // If the value of seconds is less than 10, then display seconds with a leading zero
-        if (seconds < 10) {
-            seconds = `0${seconds}`;
-        }
-
-        // The output in MM:SS format
-        return `${minutes}:${seconds}`;
-    }
-
-    const calculateTimeFraction = () => timeLeft / TIME_LIMIT;
-
+    const remainingTime = endTime - stratTime;
+    const days = Math.ceil(remainingTime / dateHelper.daySeconds);
+    const daysDuration = days * dateHelper.daySeconds;
 
     return (
-        <Circle value={timerInterval} remaininghColor="green" circleDasharray={circleDasharray} />
+        <div className={classes.countdown}>
+            <CountdownCircleTimer className={classes.circleTimer}
+                {...timerProps}
+                duration={daysDuration}
+                initialRemainingTime={remainingTime}
+            >
+                {
+                    ({ elapsedTime }) => renderTime("Días", dateHelper.getTimeDays(daysDuration - elapsedTime))
+                }
+            </CountdownCircleTimer>
+            <CountdownCircleTimer
+                {...timerProps}
+                duration={dateHelper.daySeconds}
+                initialRemainingTime={remainingTime % dateHelper.daySeconds}
+                onComplete={(totalElapsedTime) => [
+                    remainingTime - totalElapsedTime > dateHelper.hourSeconds
+                ]}
+            >
+                {
+                    ({ elapsedTime }) => renderTime("Horas", dateHelper.getTimeHours(dateHelper.daySeconds - elapsedTime))
+                }
+            </CountdownCircleTimer>
+            <CountdownCircleTimer
+                {...timerProps}
+                duration={dateHelper.hourSeconds}
+                initialRemainingTime={remainingTime % dateHelper.hourSeconds}
+                onComplete={(totalElapsedTime) => [
+                    remainingTime - totalElapsedTime > dateHelper.minuteSeconds
+                ]}
+            >
+                {
+                    ({ elapsedTime }) => renderTime("Minutos",  dateHelper.getTimeMinutes(dateHelper.hourSeconds - elapsedTime))
+                }
+            </CountdownCircleTimer>
+            <CountdownCircleTimer
+                {...timerProps}
+                duration={dateHelper.minuteSeconds}
+                initialRemainingTime={remainingTime % dateHelper.minuteSeconds}
+                onComplete={(totalElapsedTime) => [
+                    remainingTime - totalElapsedTime > 0
+                ]}
+            >
+                {
+                    ({ elapsedTime }) => renderTime("Segundos", dateHelper.getTimeSeconds(elapsedTime))
+                }
+            </CountdownCircleTimer>
+        </div>
     )
 }
 
