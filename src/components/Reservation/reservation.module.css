@@ -3,7 +3,7 @@
     flex-direction: column;
     background-color: #edd9a9;
     margin: 0 auto;
-    padding:  20px 0;
+    padding:  30px 0;
 }
 
 img {
@@ -16,5 +16,6 @@ img {
 
 .sub {
     font-size: x-large;
+    color: #495159;
     padding: 20px;
 }

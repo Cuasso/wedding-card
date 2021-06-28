@@ -15,14 +15,16 @@ const Reservation = () => (
         <Title value="RSVP" style={{ marginTop: "15px", margin: "0 auto" }} />
         <p className={classes.sub}>Esperamos que puedas acompañarnos. ¡Confirmanos tu asistencia!</p>
         < ButtonLink {...buttonProps} style={buttonProps.style} />
-        <img src={imgGift} />
-        <Popup text="Nuestro CBU ;)">
-            <p><strong>Nombre del Titular:</strong> Nombre Apellido</p>
-            <p><strong>CBU:</strong> 12345678910</p>
-            <p><strong>DNI:</strong> 12345678</p>
-            <p><strong>ALIAS:</strong> conejo.saltarin</p>
-            <p>Banco BBVA</p>
-        </Popup>
+        <div style={{ paddingTop: "30px" }}>
+            <img src={imgGift} />
+            <Popup text="Nuestro CBU ;)">
+                <p><strong>Nombre del Titular:</strong> Nombre Apellido</p>
+                <p><strong>CBU:</strong> 12345678910</p>
+                <p><strong>DNI:</strong> 12345678</p>
+                <p><strong>ALIAS:</strong> conejo.saltarin</p>
+                <p>Banco BBVA</p>
+            </Popup>
+        </div>
     </div>
 )
 

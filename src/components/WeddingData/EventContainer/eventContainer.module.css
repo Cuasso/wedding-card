@@ -15,4 +15,5 @@ h1 {
     font-size: medium;
     display: flex;
     flex-direction: column;
+    color: #495159;
 }
