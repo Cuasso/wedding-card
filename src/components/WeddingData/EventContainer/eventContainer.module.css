@@ -10,10 +10,9 @@ h1 {
     font-size: xx-large;
 }
 
-p {
+.content {
     padding-bottom: 20px;
     font-size: medium;
     display: flex;
     flex-direction: column;
 }
-

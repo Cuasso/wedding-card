@@ -8,19 +8,20 @@ const Modal = props => {
         <div className={classes.popup}>
             <div className={classes.box}>
                 <span className={classes.closeIcon} onClick={props.handleClose}>x</span>
-                {props.content}
+                <div className={classes.content}>
+                    {props.content}
+                </div>
             </div>
         </div>
     )
 }
 
 
-const Popup = () => {
+const Popup = props => {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
         if (isOpen) {
-            console.log(isOpen)
             document.body.style.overflow = 'hidden'
         } else {
             document.body.style.overflow = 'unset';
@@ -34,15 +35,12 @@ const Popup = () => {
         <div>
             <input
                 type="button"
-                value="Click to Open Popup"
+                value={props.text}
                 onClick={togglePopup}
             />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             {
                 isOpen && <Modal
-                    content={<>
-                        <b>Design your Popup</b>
-                    </>}
+                    content={props.children}
                     handleClose={togglePopup}
                 />
             }

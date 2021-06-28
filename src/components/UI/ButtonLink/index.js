@@ -5,8 +5,7 @@ const ButtonLink = props => (
         href={props.link} 
         className={classes.buttonLink}
         {...props}
-        >
-        
+    >
         {props.text}
     </a>
 )
