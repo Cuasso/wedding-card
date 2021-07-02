@@ -17,7 +17,7 @@ const Reservation = () => (
         < ButtonLink {...buttonProps} style={buttonProps.style} />
         <div style={{ paddingTop: "30px" }}>
             <img src={imgGift} className={classes.rsvpImg} alt="gift" />
-            <p className={classes.sub} style={{ paddingTop: "0" }}>Por si no sabes que regalarnos...</p>
+            <p className={classes.sub} style={{ paddingTop: "0" }}> Y por si no sabes que regalarnos...</p>
             <Popup text="Datos bancarios">
                 <p><strong>Nombre del Titular:</strong> Nombre Apellido</p>
                 <p><strong>CBU:</strong> 12345678910</p>

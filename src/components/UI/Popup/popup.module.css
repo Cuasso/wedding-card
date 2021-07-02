@@ -59,11 +59,11 @@
 input {
     display: block;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
     background-color: #FAC9B8;
-    color: #495159;
+    color: #e8917b;
     padding: 14px 25px;    
-    border: 2px solid #f7b7a2;
+    border: 2px solid #e8917b;
     border-radius: 3px;
     min-width: 100px;
     max-width: fit-content;
