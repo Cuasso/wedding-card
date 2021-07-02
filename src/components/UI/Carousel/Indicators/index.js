@@ -1,0 +1,12 @@
+import classes from './indicators.module.css'
+
+
+
+const Indicators = props => (
+    <div className={classes.indicators}>
+        <a href={(e) => {e.preventDefault()}} target="_blank" onClick={props.left} className={`${classes.arrow} ${classes.arrowLeft}`}></a>
+        <a href={(e) => {e.preventDefault()}} target="_blank" onClick={props.right} className={`${classes.arrow} ${classes.arrowRight}`} ></a>
+    </div>
+)
+
+export default Indicators

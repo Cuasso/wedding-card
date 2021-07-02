@@ -1,0 +1,7 @@
+.carouselItem{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 500px;
+}
