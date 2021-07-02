@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import ArrowDown from "../../UI/ArrowDown";
 
 import classes from './header.module.css'
-import background from '../../../assets/header-background.jpg'
+import background from '../../../assets/header-background.svg'
 
 const Header = () => {
 

@@ -21,7 +21,7 @@
     background: #fff;
     border-radius: 10px;
     padding: 20px;
-    border: 1px solid coral;
+    border: 1px solid #e8917b;
     overflow: auto;
 }
 
@@ -34,13 +34,13 @@
     border-radius: 50%;
     line-height: 20px;
     text-align: center;
-    border: 1px solid coral;
+    border: 1px solid #e8917b;
     font-size: 20px;
-    color: coral;
+    color: #e8917b;
 }
 
 .closeIcon:hover{
-    background-color: coral;
+    background-color: #e8917b;
     color: white;
     border: 1px solid white;
 }

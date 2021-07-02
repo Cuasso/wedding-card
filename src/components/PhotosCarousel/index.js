@@ -3,8 +3,6 @@ import CarouselItem from '../UI/Carousel/CarouselItem'
 
 import classes from './photosCarousel.module.css'
 
-const BASE_PATH = '../../assets/photos/'
-
 const ImportImages = () => {
     let images = [];
     const context = require.context('../../assets/photos/', false, /\.(png|jpe?g|svg)$/)
@@ -17,16 +15,17 @@ const ImportImages = () => {
 const PhotosCarousel = props => {
 
     const images = ImportImages()
-    
+
     return (
         <div className={classes.photosCarousel}>
-            <span className={classes.message}>Nuestra fotos!!</span>            
+            <span className={classes.message}>Sobre nosotros!!</span>
             <Carousel>
                 {
                     images.map(image =>
-                        <CarouselItem >
-                            <img src={image} 
-                                key={image} 
+                        <CarouselItem key={image}>
+                            <img src={image}
+                                key={image}
+                                alt={image}
                                 style={{ maxHeight: "100%", maxWidth: "100%" }} />
                         </CarouselItem>)
                 }

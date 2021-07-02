@@ -20,7 +20,7 @@ const WeddingData = () => {
         <div className={classes.container}>
             <Countdown />
             <div style={{ display: "flex", flexDirection: "column" }}>
-                <img className={classes.imgWedding} src={imgWedding} />
+                <img className={classes.imgWedding} src={imgWedding} alt="wedding"/>
                 <Title value="nuestra boda" />
                 <div className={classes.weddingEvents}>
                     < EventContainer {...party} >

@@ -1,13 +1,13 @@
 .eventContainer {
     margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 15px;
 }
 
 h1 {
     text-transform: capitalize;
-    color: coral;
+    color: #e8917b;
     font-size: xx-large;
+    padding-bottom: 10px;
 }
 
 .content {
