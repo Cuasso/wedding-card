@@ -4,6 +4,7 @@ import WeddingData from './components/WeddingData'
 import Reservation from "./components/Reservation";
 import PhotosCarousel from './components/PhotosCarousel'
 import MusicQuiz from './components/MusicQuiz'
+import CovidRecomendation from './components/CovidRecomendation'
 import Footer from './components/Layout/Footer'
 
 import "./styles.css";
@@ -14,9 +15,10 @@ const App = () => {
       <Header />
       <Card />
       <WeddingData />
-      < Reservation />
+      <Reservation />
       <PhotosCarousel />
-      < MusicQuiz />
+      <MusicQuiz />
+      <CovidRecomendation />
       <Footer />
     </div>
   );

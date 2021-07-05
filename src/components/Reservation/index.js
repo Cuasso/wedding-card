@@ -14,7 +14,7 @@ const Reservation = () => (
     <div className={classes.rsvpContainer}>
         <Title value="RSVP" style={{ marginTop: "15px", margin: "0 auto" }} />
         <p className={classes.sub}>Esperamos que puedas acompañarnos. ¡Confirmanos tu asistencia!</p>
-        < ButtonLink {...buttonProps} style={buttonProps.style} />
+        < ButtonLink {...buttonProps}/>
         <div style={{ paddingTop: "30px" }}>
             <img src={imgGift} className={classes.rsvpImg} alt="gift" />
             <p className={classes.sub} style={{ paddingTop: "0" }}> Y por si no sabes que regalarnos...</p>

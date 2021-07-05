@@ -20,24 +20,13 @@
 
 .dancersImg {
     margin: 0 auto;
-    width: 150px;
-    height: 200px;
-}
-
-.musicImgMax {
-    margin: 0 auto;
-    width: 143px;
-    height: 143px;
-}
-
-.musicImgMin {
-    margin: 0 auto;
-    width: 71px;
-    height: 71px;
+    width: 130px;
+    height: 180px;
 }
 
 .message {
-    padding: 15px 0;
+    padding-top: 15px;
+   padding-bottom: 20px;
     margin: 0 auto;
-    font-size: x-large;
+    font-size: large;
 }
