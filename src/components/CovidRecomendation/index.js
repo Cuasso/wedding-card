@@ -4,7 +4,7 @@ import classes from './covidRecomendation.module.css'
 const CovidRecomendation = () => (
     <div className={classes.recomendation}>
         <h1 >Recomendaciones Covid 19</h1>
-        <p className={classes.message}>Te dejamos algunas recomendaciones que creemos son necesarias para que puedas cuidarte y aun asi disfrutar de nuestra fiesta.</p>
+        <p className={classes.message}>Te dejamos algunas recomendaciones que creemos son necesarias para que puedas cuidarte y disfrutar de nuestra fiesta.</p>
         <Popup text="VER">
             <ul className={classes.list}>
                 <li className={classes.item}>No olvides llevar y utilizar tu barbijo, tapando siempre boca, nariz y mentón. Sólo podrás quitártelo en el momento de la recepción, cuando te encuentres en tu living o en tu mesa asignada.</li>
