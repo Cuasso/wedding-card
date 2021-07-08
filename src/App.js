@@ -9,7 +9,7 @@ import Footer from './components/Layout/Footer'
 
 import "./styles.css";
 
-const App = () => {
+const App = () => {  
   return (
     <div className="App">
       <Header />
