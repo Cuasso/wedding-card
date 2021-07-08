@@ -1,21 +1,24 @@
+import reactDOM from 'react-dom';
+
 import { useState, useEffect } from 'react';
 import classes from './popup.module.css'
-
 
 const Modal = props => {
 
     return (
-        <div className={classes.popup}>
-            <div className={classes.box}>
-                <span className={classes.closeIcon} onClick={props.handleClose}>x</span>
-                <div className={classes.content}>
-                    {props.content}
+        reactDOM.createPortal(
+            <div className={classes.popup}>
+                <div className={classes.box}>
+                    <span className={classes.closeIcon} onClick={props.handleClose}>x</span>
+                    <div className={classes.content}>
+                        {props.content}
+                    </div>
                 </div>
             </div>
-        </div>
+            , document.getElementById("overlay")
+        )
     )
 }
-
 
 const Popup = props => {
     const [isOpen, setIsOpen] = useState(false);
@@ -32,6 +35,7 @@ const Popup = props => {
     const togglePopup = () => setIsOpen(!isOpen);
 
     return (
+
         <div>
             <input
                 type="button"
@@ -44,7 +48,7 @@ const Popup = props => {
                     handleClose={togglePopup}
                 />
             }
-        </div >
+        </div>
     )
 }
 
