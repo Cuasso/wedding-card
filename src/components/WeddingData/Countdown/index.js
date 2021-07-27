@@ -1,3 +1,4 @@
+
 import classes from './countdown.module.css'
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import * as dateHelper from './helper'
@@ -6,7 +7,7 @@ const timerProps = {
     isPlaying: true,
     size: 140,
     colors: [["#f5d0c3"]],
-    strokeWidth: 2
+    strokeWidth: 2,
 };
 
 const renderTime = (dimension, time) => {
@@ -19,9 +20,8 @@ const renderTime = (dimension, time) => {
 };
 
 const Countdown = () => {
-
     const stratTime = new Date() / 1000;
-    const endTime = new Date(2021, 8, 18,18,0) / 1000;
+    const endTime = new Date(2021, 8, 18, 18, 0) / 1000;
 
     const remainingTime = endTime - stratTime;
     const days = Math.ceil(remainingTime / dateHelper.daySeconds);
@@ -59,7 +59,7 @@ const Countdown = () => {
                 ]}
             >
                 {
-                    ({ elapsedTime }) => renderTime("Minutos",  dateHelper.getTimeMinutes(dateHelper.hourSeconds - elapsedTime))
+                    ({ elapsedTime }) => renderTime("Minutos", dateHelper.getTimeMinutes(dateHelper.hourSeconds - elapsedTime))
                 }
             </CountdownCircleTimer>
             <CountdownCircleTimer
