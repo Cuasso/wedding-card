@@ -7,12 +7,12 @@ import imgWedding from '../../assets/wedding-data.png'
 
 const party = {
     event: "fiesta",
-    link: "https://goo.gl/maps/tTFtbm1Mu3tMkyux9",
+    link: "https://maps.app.goo.gl/zFSkLS1cL2xrWGzTA",
 }
 
 const ceremony = {
     event: "ceremonia",
-    link: "https://goo.gl/maps/1duYedpB8o9321X27",
+    link: "https://maps.app.goo.gl/zFSkLS1cL2xrWGzTA",
 }
 
 const WeddingData = () => {
@@ -20,20 +20,20 @@ const WeddingData = () => {
         <div className={classes.container}>
             <Countdown />
             <div style={{ display: "flex", flexDirection: "column" }}>
-                <img className={classes.imgWedding} src={imgWedding} alt="wedding"/>
+                <img className={classes.imgWedding} src={imgWedding} alt="wedding" />
                 <Title value="nuestra boda" />
                 <div className={classes.weddingEvents}>
                     < EventContainer {...party} >
-                        <span>18 de Octubre de 2021</span>
-                        <span>18:30 horas</span>
-                        <span> Cebra </span>
-                        <span>En algún lado era</span>
+                        <span>18 de Septiembre de 2021</span>
+                        <span>19:00 horas</span>
+                        <span> Zebra lago Eventos</span>
+                        <span>Cañuelas, Bs As, Argentina</span>
                     </EventContainer>
                     < EventContainer {...ceremony} >
-                        <span>15 de Octubre de 2021</span>
-                        <span>18:30 horas</span>
-                        <span> San Cayetano </span>
-                        <span>Gregorio de Laferrere, La Matanza</span>
+                        <span>18 de Septiembre de 2021</span>
+                        <span>18:00 horas</span>
+                        <span> Zebra lago Eventos</span>
+                        <span>Cañuelas, Bs As, Argentina</span>
                     </EventContainer>
                 </div>
             </div>

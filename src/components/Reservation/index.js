@@ -19,11 +19,11 @@ const Reservation = () => (
             <img src={imgGift} className={classes.rsvpImg} alt="gift" />
             <p className={classes.sub} style={{ paddingTop: "0" }}> Y por si no sabes que regalarnos...</p>
             <Popup text="Datos bancarios">
-                <p><strong>Nombre del Titular:</strong> Nombre Apellido</p>
-                <p><strong>CBU:</strong> 12345678910</p>
-                <p><strong>DNI:</strong> 12345678</p>
-                <p><strong>ALIAS:</strong> conejo.saltarin</p>
-                <p>Banco BBVA</p>
+                <p><strong>Nombre del Titular:</strong> Johanna Giselle Vera</p>
+                <p><strong>CBU:</strong> 0140052603518350783267</p>
+                <p><strong>DNI:</strong> 31205738</p>
+                <p><strong>ALIAS:</strong> johannavera</p>
+                <p>Banco Provincia de Buenos Aires</p>
             </Popup>
         </div>
     </div>

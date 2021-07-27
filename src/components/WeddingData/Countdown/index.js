@@ -21,7 +21,7 @@ const renderTime = (dimension, time) => {
 const Countdown = () => {
 
     const stratTime = new Date() / 1000;
-    const endTime = new Date(2021, 8, 18,18,30) / 1000;
+    const endTime = new Date(2021, 8, 18,18,0) / 1000;
 
     const remainingTime = endTime - stratTime;
     const days = Math.ceil(remainingTime / dateHelper.daySeconds);

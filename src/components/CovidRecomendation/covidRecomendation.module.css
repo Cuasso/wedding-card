@@ -11,13 +11,15 @@
 
 .list {
     list-style: none;
+    width: 95%;
+    margin: 0 auto;
 }
 
 .list .item::before {
-    content: "\2022";
-    
+    content: "\2022";    
     color: #e8917b;
     font-weight: bold;
     display: inline-block;
     width: 1em;
+    margin-left: -1em;
 }

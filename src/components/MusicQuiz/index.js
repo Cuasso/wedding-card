@@ -12,7 +12,7 @@ const buttonProps = {
 const MusicQuiz = () => (
     <div className={classes.musicContainer} style={{ backgroundImage: `url(${backgroundImg})`}}>
         <div className={classes.card}>
-            <img src={dancersImg} className={classes.dancersImg} />
+            <img src={dancersImg} className={classes.dancersImg} alt="dancing couple"/>
             <p className={classes.message}>Llego la hora de la fiesta y queremos saber que canciones te harán mover el cuerpo.</p>
             < ButtonLink {...buttonProps} style={buttonProps.style} />
         </div>
