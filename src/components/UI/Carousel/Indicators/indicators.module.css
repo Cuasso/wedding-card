@@ -1,0 +1,47 @@
+.indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indicators>button {
+    margin: 5px;
+}
+
+.arrow {
+    position: absolute;
+    width: 3vmin;
+    height: 3vmin;
+    background: transparent;
+    border-top: 1vmin solid #495159;
+    border-right: 1vmin solid #495159;
+    box-shadow: 0 0 0 lightgray;
+    transition: all 200ms ease;
+    top:50%
+}
+
+.arrowLeft {
+    left: 2%;
+    transform: translate3d(0, -50%, 0) rotate(-135deg);
+}
+
+.arrowRight {
+    right: 2%;
+    transform: translate3d(0, -50%, 0) rotate(45deg);
+}
+
+
+.arrow:hover {
+    border-color: #e8917b;
+    box-shadow: 0.5vmin -0.5vmin 0 #495159;
+}
+
+.arrow:before { 
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%,-60%) rotate(45deg);
+    width: 200%;
+    height: 200%;
+}

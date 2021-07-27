@@ -1,10 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Redirect, Link } from "react-router-dom";
+
 import App from './App';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+    < Router>
+        <Route exact path='/lucho&joha'>
+            <App />
+        </Route>
+        <Route path='/'>
+            <Redirect to='/lucho&joha' />
+        </Route>
+    </Router>
+    , document.getElementById('root'));

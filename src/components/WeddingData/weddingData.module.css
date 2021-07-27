@@ -1,4 +1,17 @@
 .container {
     height: auto;
-    min-height: 600px;    
+    min-height: 600px;
+    margin: 30px 0;
+}
+
+.imgWedding {
+    margin:  0 auto;
+    width: 300px;
+    height: 150px;
+    margin-top: 25px;
+}
+
+.weddingEvents{
+    display: flex;
+    flex-direction: row;
 }

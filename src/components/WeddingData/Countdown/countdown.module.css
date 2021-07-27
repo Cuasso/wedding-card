@@ -1,52 +1,20 @@
-.baseTimer {
-    position: relative;
-    height: 200px;
-    width: 200px;
-}
-
-/* Removes SVG styling that would hide the time label */
-
-.baseTimerCircle {
-    fill: none;
-    stroke: none;
-}
-
-/* The SVG path that displays the timer's progress */
-
-.baseTimerPathElapsed {
-    stroke-width: 0.5px;
-    stroke: grey;
-}
-
-.baseTimerLabel {
-    position: absolute;
-    top: 0;
-    /* Size should match the parent container */
-    width: 200px;
-    height: 200px;
-    /* Create a flexible box that centers content vertically and horizontally */
+.countdown {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    /* Sort of an arbitrary number; adjust to your liking */
-    font-size: 35px;
+    margin: 0 auto;
+    max-width: 700px;
+    justify-content: space-around;
+    font-family: sans-serif;
+    text-align: center;
 }
 
-.baseTimerPathRemaining {
-    stroke-width: 1px;
-    /* Rounds the line endings to create a seamless circle */
-    stroke-linecap: round;
-    /* Makes sure the animation starts at the top of the circle */
-    transform: rotate(90deg);
-    transform-origin: center;
-    /* One second aligns with the speed of the countdown timer */
-    transition: 1s linear all;
-    /* Allows the ring to change color when the color value updates */
-    stroke: currentColor;
-    color: #f5d0c3;
+.timeWrapper {
+    color: rgb(136, 136, 136);
 }
 
-.baseTimerSvg {
-    /* Flips the svg and makes the animation to move left-to-right */
-    transform: scaleX(-1);
+.time {
+    font-size: 32px;
+}
+
+.dimension {
+    font-size: 12px;
 }

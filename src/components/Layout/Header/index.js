@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
+import ArrowDown from "../../UI/ArrowDown";
 
 import classes from './header.module.css'
-import background from '../../../assets/header-background.jpg'
+import background from '../../../assets/header-background.svg'
 
 const Header = () => {
 
@@ -32,6 +33,7 @@ const Header = () => {
                 <h1 className={classes.subHeadline}>&</h1>                         
                 <h1 className={classes.headline}>Joha</h1>
             </div>
+            < ArrowDown />            
         </div>
     )
 }

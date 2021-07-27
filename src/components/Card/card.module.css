@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&display=swap');
 .card {
     background-color: #f5d0c3;
     height: 360px;
     grid-template-rows: 2fr 1fr 1fr;
     display: grid;
     justify-content: center;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 
 .ringImg {
@@ -16,14 +14,7 @@
     grid-row: 1 / 2;
 }
 
-.title {
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    grid-row: 2 / 3;
-    font-size: 40px;
-}
-
 .body {
     grid-row: 3 / 4;
-    font-size: 25px;
+    font-size: large;
 }

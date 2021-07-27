@@ -1,0 +1,26 @@
+.photosCarousel {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.message {
+    font-size: large;
+    margin-bottom: 50px;
+}
+
+.carouselImg {
+    width: 119px;
+    height: 103px;
+    margin: 0 auto;
+}
+
+.hashtag {
+    padding: 20px 0;
+}
+
+.igHashtag {
+    color: #e8917b;
+}

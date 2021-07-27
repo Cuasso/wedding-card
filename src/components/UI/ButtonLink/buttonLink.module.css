@@ -1,0 +1,18 @@
+.buttonLink {
+    display: block;
+    text-align: center;
+    background-color: #e8917b;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    border: 1.5px solid #e8917b;
+    border-radius: 3px;
+    min-width: 100px;
+    max-width: fit-content;
+    font-size: medium;
+    margin: 0 auto;
+}
+
+.buttonLink:hover, .buttonLink:active {
+    background-color: rgb(250, 147, 110);
+}

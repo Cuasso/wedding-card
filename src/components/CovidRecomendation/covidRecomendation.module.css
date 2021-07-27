@@ -1,0 +1,23 @@
+.recomendation {
+    padding: 40px 0;
+}
+
+.message {
+    padding: 15px 0;
+    margin: 0 auto;
+    width: 80%;
+    font-size: large;
+}
+
+.list {
+    list-style: none;
+}
+
+.list .item::before {
+    content: "\2022";
+    
+    color: #e8917b;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+}

@@ -1,0 +1,9 @@
+.carousel {
+    overflow: hidden;
+    position: relative;
+}
+
+.inner {
+    white-space: nowrap;
+    transition: transform 0.7s;
+}

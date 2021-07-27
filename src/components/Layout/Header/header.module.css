@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+
 
 .header {
   width: 100%;
@@ -8,11 +9,12 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
+  flex-direction: column;
 }
 
 .textWrapper {
   text-align: center;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Herr Von Muellerhoff', cursive;
 }
 
 .headline {
@@ -27,13 +29,12 @@
 }
 
 .subHeadline {
-  color: #edd9a9;
+  color: #febc9a;
   font-size: 15rem;
 }
 
 .parallax {
   position: absolute;
-  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
