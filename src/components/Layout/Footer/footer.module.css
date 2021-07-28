@@ -9,3 +9,19 @@
     font-size: x-large;
     margin: 0 auto;
 }
+
+.background {
+    background-color: #f5d0c3;
+}
+
+@media only screen and (max-width: 500px) {
+    .footer {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .footer {
+        width: 100%;
+    }
+}

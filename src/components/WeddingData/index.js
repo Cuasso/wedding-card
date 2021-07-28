@@ -23,15 +23,15 @@ const WeddingData = () => {
                 <img className={classes.imgWedding} src={imgWedding} alt="wedding" />
                 <Title value="nuestra boda" />
                 <div className={classes.weddingEvents}>
-                    < EventContainer {...party} >
-                        <span>18 de Septiembre de 2021</span>
-                        <span>19:00 horas</span>
-                        <span> Zebra lago Eventos</span>
-                        <span>Cañuelas, Bs As, Argentina</span>
-                    </EventContainer>
                     < EventContainer {...ceremony} >
                         <span>18 de Septiembre de 2021</span>
                         <span>18:00 horas</span>
+                        <span> Zebra lago Eventos</span>
+                        <span>Cañuelas, Bs As, Argentina</span>
+                    </EventContainer>
+                    < EventContainer {...party} >
+                        <span>18 de Septiembre de 2021</span>
+                        <span>19:00 horas</span>
                         <span> Zebra lago Eventos</span>
                         <span>Cañuelas, Bs As, Argentina</span>
                     </EventContainer>
