@@ -3,9 +3,17 @@ import classes from './countdown.module.css'
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import * as dateHelper from './helper'
 
+let timerSize = 140
+
+if (window.outerWidth <= 500) {
+    timerSize = 90
+} else if (window.outerWidth <= 400) {
+    timerSize = 70
+}
+
 const timerProps = {
     isPlaying: true,
-    size: 140,
+    size: 90,
     colors: [["#f5d0c3"]],
     strokeWidth: 2,
 };

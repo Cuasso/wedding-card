@@ -1,6 +1,6 @@
 /* Popup style */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&display=swap');
 .popup {
     font-family: sans-serif;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -17,18 +17,17 @@
 .box {
     display: flex;
     position: relative;
-    top: calc(100vh - 70vh);
+    top: calc(100vh - 85vh);
     flex-direction: column;
     width: fit-content;
     max-width: 70%;
     margin: 0 auto;
     height: auto;
-    max-height: 70vh;
+    max-height: 500px;
     background: #fff;
     border-radius: 10px;
     padding: 20px;
     border: 1px solid #e8917b;
-    overflow: auto;
 }
 
 .closeIcon {
@@ -45,7 +44,7 @@
     color: #e8917b;
 }
 
-.closeIcon:hover{
+.closeIcon:hover {
     background-color: #e8917b;
     color: white;
     border: 1px solid white;
@@ -59,8 +58,8 @@
     font-size: large;
     padding-top: 15px;
     color: #495159;
+    overflow: auto;
 }
-
 
 input {
     display: block;
@@ -68,7 +67,7 @@ input {
     font-weight: 500;
     background-color: #FAC9B8;
     color: white;
-    padding: 14px 25px;    
+    padding: 14px 25px;
     border: 1px solid white;
     border-radius: 3px;
     min-width: 100px;
@@ -81,3 +80,14 @@ input:hover, input:active {
     background-color: #f5d0c3;
 }
 
+@media only screen and (max-width: 400px) {
+    .box {
+        max-height: 400px;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .box {
+        max-height: 500px;
+    }
+}

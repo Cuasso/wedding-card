@@ -11,10 +11,20 @@
     color: rgb(136, 136, 136);
 }
 
-.time {
-    font-size: 32px;
+@media only screen and (max-width: 400px) {
+    .time {
+        font-size: 20px;
+    }
+    .dimension {
+        font-size: 12px;
+    }
 }
 
-.dimension {
-    font-size: 12px;
+@media only screen and (min-width: 400px) {
+    .time {
+        font-size: 32px;
+    }
+    .dimension {
+        font-size: 12px;
+    }
 }
