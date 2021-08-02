@@ -26,19 +26,19 @@
 }
 
 .headline {
-  font-size: 30rem;
+  font-size: 20rem;
   color: black;
   font-weight: 100;
   line-height: 0.5;
 }
 
 .headline::first-letter {
-  font-size: 35rem;
+  font-size: 25rem;
 }
 
 .subHeadline {
   color: #eb9892;
-  font-size: 30rem;
+  font-size: 20rem;
 }
 
 .parallax {
@@ -60,15 +60,15 @@
 
 @media only screen and (max-width: 600px) {
   .headline {
-    font-size: 8rem;
+    font-size: 10rem;
     font-weight: 100;
     line-height: 0.5;
   }
   .headline::first-letter {
-    font-size: 10rem;
+    font-size: 12rem;
   }
   .subHeadline {
-    font-size: 8rem;
+    font-size: 10rem;
   }
   .date {
     font-size: small;
@@ -88,6 +88,7 @@
     font-size: 20rem;
   }
   .date {
+    color: #eb9892;
     font-size: large;
   }
 }

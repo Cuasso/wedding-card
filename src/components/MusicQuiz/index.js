@@ -12,7 +12,9 @@ const buttonProps = {
 const MusicQuiz = () => (
     <div className={classes.musicContainer} style={{ backgroundImage: `url(${backgroundImg})` }}>
         <div className={classes.card}>
-            <img src={dancersImg} className={classes.dancersImg} alt="dancing couple" />
+            <div className={classes.box}>
+            <img src={dancersImg} className={classes.musicImg} alt="dancing couple" />
+            </div>
             <p className={classes.message}>
                 Llego la hora de la fiesta y queremos que nos ayudes con la canciones que pensás que no pueden faltar o quieras escuchar!
             </p>
