@@ -1,7 +1,7 @@
 import ButtonLink from '../UI/ButtonLink'
 
 import classes from './musicQuiz.module.css'
-import dancersImg from '../../assets/dancers.png'
+import dancersImg from '../../assets/music.bmp'
 import backgroundImg from '../../assets/music-background.jpg'
 
 const buttonProps = {
@@ -10,10 +10,12 @@ const buttonProps = {
 }
 
 const MusicQuiz = () => (
-    <div className={classes.musicContainer} style={{ backgroundImage: `url(${backgroundImg})`}}>
+    <div className={classes.musicContainer} style={{ backgroundImage: `url(${backgroundImg})` }}>
         <div className={classes.card}>
-            <img src={dancersImg} className={classes.dancersImg} alt="dancing couple"/>
-            <p className={classes.message}>Llego la hora de la fiesta y queremos saber que canciones te harán mover el cuerpo.</p>
+            <img src={dancersImg} className={classes.dancersImg} alt="dancing couple" />
+            <p className={classes.message}>
+                Llego la hora de la fiesta y queremos que nos ayudes con la canciones que pensás que no pueden faltar o quieras escuchar!
+            </p>
             < ButtonLink {...buttonProps} style={buttonProps.style} />
         </div>
     </div>

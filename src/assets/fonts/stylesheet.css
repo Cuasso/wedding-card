@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'fabella';
+    src: url('fabella-flower.woff2') format('woff2'),
+        url('fabella-flower.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

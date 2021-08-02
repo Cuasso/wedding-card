@@ -5,7 +5,7 @@ import * as dateHelper from './helper'
 
 let timerSize = 140
 
-if (window.outerWidth <= 500) {
+if (window.outerWidth <= 500 && window.outerWidth > 400) {
     timerSize = 90
 } else if (window.outerWidth <= 400) {
     timerSize = 70
@@ -13,7 +13,7 @@ if (window.outerWidth <= 500) {
 
 const timerProps = {
     isPlaying: true,
-    size: 90,
+    size: timerSize,
     colors: [["#f5d0c3"]],
     strokeWidth: 2,
 };

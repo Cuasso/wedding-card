@@ -7,7 +7,9 @@ const Card = () => {
         <div className={classes.card}>
             <img className={classes.ringImg} src={ringsImg} alt="rings"/>
             <Title style={{ gridRow : " 2 / 3" }} value="nos casamos" />
-            <span className={classes.body}>y estamos ansiosos por compartir este día con ustedes.</span>
+            <span className={classes.body}>
+                Bienvenidos... estamos felices de poder compartir este día tan especial con ustedes.
+            </span>
         </div>
     )
 }

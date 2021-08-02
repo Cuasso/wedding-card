@@ -23,9 +23,11 @@ const PhotosCarousel = props => {
         <div className={classes.photosCarousel}>
             <img src={image} className={classes.carouselImg} />
             <h1 className={classes.hashtag}>#Lucho&Joha</h1>
-            <span className={classes.message}>
-                Sumate al hashtag <a href={IgUrl} target='_blank' className={classes.igHashtag}>#Lucho&Joha</a> para compartir tus fotos con nosotros.
-            </span>
+            <div className={classes.message}>
+                <span>
+                    Sumate al hashtag <a href={IgUrl} target='_blank' className={classes.igHashtag}>#Lucho&Joha</a> para compartir tus fotos o videos con nosotros.</span> <br />
+                <span>Ya podes etiquetarnos!!</span>
+            </div>
             <Carousel>
                 {
                     images.map(image =>

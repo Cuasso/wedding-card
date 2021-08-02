@@ -1,9 +1,7 @@
 import Title from '../UI/Title'
 import ButtonLink from '../UI/ButtonLink'
-import Popup from '../UI/Popup'
 
 import classes from "./reservation.module.css"
-import imgGift from '../../assets/images.png'
 
 const buttonProps = {
     text: "Confirmar asistencia",
@@ -15,17 +13,6 @@ const Reservation = () => (
         <Title value="RSVP" style={{ marginTop: "15px", margin: "0 auto" }} />
         <p className={classes.sub}>Esperamos que puedas acompañarnos. ¡Confirmanos tu asistencia!</p>
         < ButtonLink {...buttonProps}/>
-        <div style={{ paddingTop: "30px" }}>
-            <img src={imgGift} className={classes.rsvpImg} alt="gift" />
-            <p className={classes.sub} style={{ paddingTop: "0" }}> Y por si no sabes que regalarnos...</p>
-            <Popup text="Datos bancarios">
-                <p><strong>Nombre del Titular:</strong> Johanna Giselle Vera</p>
-                <p><strong>CBU:</strong> 0140052603518350783267</p>
-                <p><strong>DNI:</strong> 31205738</p>
-                <p><strong>ALIAS:</strong> johannavera</p>
-                <p>Banco Provincia de Buenos Aires</p>
-            </Popup>
-        </div>
     </div>
 )
 

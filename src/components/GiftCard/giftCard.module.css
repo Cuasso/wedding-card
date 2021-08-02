@@ -1,4 +1,4 @@
-.rsvpContainer {
+.giftCardContainer {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -6,15 +6,15 @@
     background-color: #f8e8c7;
 }
 
-.rsvpImg {
+.giftImg {
     margin: 0 auto;
     margin-top: 15px;
-    width: auto;
-    height: auto;
+    width: 100px;
+    height: 100px;
 }
 
 .sub {
-    font-size: x-large;
-    color: #495159;
-    padding: 20px;
+    font-size: large;
+    color: #14181d;
+    padding-bottom: 15px;
 }

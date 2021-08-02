@@ -9,9 +9,9 @@ const CovidRecomendation = () => (
             <ul className={classes.list}>
                 <li className={classes.item}>No olvides llevar y utilizar tu barbijo.</li>
                 <li className={classes.item}>Mantener el distanciamiento social.</li>
-                <li className={classes.item}>Recordar mantener tus manos limpias. Contarás con un kit de higiene disponible en todo momento ubicado en tu mesa y diversas secciones del salón.</li>
+                <li className={classes.item}>Recordar mantener tus manos limpias. Contarás con un kit de higiene disponible en todo momento ubicado en tu mesa y en diversos sectores del salón.</li>
                 <li className={classes.item}>Evitar el amontonamiento de personas. Habrá tiempo de sobra para que saludes a todas aquellas personas que hace tiempo no ves y para que saludes a los novios.</li>
-                <li className={classes.item}>En el ingreso se tomará la temperatura a todos los invitados; en caso de que alguien presente fiebre, no se le permite el acceso y se le indica volver a su alojamiento y llamar servicio de emergencias en caso de que presente síntomas respiratorios.</li>
+                <li className={classes.item}>En el ingreso se tomará la temperatura a todos los invitados; en caso de que alguien presente fiebre, no se le permitirá el acceso y se le indicará volver a su alojamiento y llamar al servicio de emergencias en caso de que presente síntomas respiratorios.</li>
                 <li className={classes.item}>Durante el evento no se podrá hacer vivos de la fiesta para subir en tus redes sociales.</li>
             </ul>
         </Popup>
