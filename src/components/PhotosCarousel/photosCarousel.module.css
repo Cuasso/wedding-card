@@ -1,9 +1,11 @@
 .photosCarousel {
     width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
     height: max-content;
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding: 30px;
 }
 
 .message {

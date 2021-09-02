@@ -12,6 +12,7 @@
 .card {
     margin: 0 auto;
     width: 70%;
+    max-width: var(--max-width);
     padding: 30px;
     height: 70%;
     background-color: white;

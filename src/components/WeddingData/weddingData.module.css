@@ -1,7 +1,10 @@
 .container {
     height: auto;
-    min-height: 600px;
-    margin: 30px 0;
+    min-height: 500px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .imgWedding {

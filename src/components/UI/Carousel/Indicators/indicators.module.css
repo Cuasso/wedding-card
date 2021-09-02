@@ -13,8 +13,8 @@
     width: 3vmin;
     height: 3vmin;
     background: transparent;
-    border-top: 1vmin solid #495159;
-    border-right: 1vmin solid #495159;
+    border-top: 1vmin solid #f8e8c7;
+    border-right: 1vmin solid #f8e8c7;
     box-shadow: 0 0 0 lightgray;
     transition: all 200ms ease;
     top:50%
@@ -33,7 +33,7 @@
 
 .arrow:hover {
     border-color: #e8917b;
-    box-shadow: 0.5vmin -0.5vmin 0 #495159;
+    box-shadow: 0.5vmin -0.5vmin 0 #f8e8c7;
 }
 
 .arrow:before { 

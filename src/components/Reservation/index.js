@@ -5,7 +5,7 @@ import classes from "./reservation.module.css"
 
 const buttonProps = {
     text: "Confirmar asistencia",
-    link: "link a encuesta",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSdMLLE9Sq2MGih4179ELJXc2f3MC1YJDJtmCeLk3JPrLS9pLA/viewform",
 }
 
 const Reservation = () => (

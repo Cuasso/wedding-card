@@ -6,7 +6,7 @@ import backgroundImg from '../../assets/music-background.jpg'
 
 const buttonProps = {
     text: "Recomendar canciones",
-    link: "link a encuesta"
+    link: "https://docs.google.com/forms/d/1LdTWO3epRx4U8PekD33RNw_JuF1yaNVpwFWBJap7mdE/viewform?edit_requested=true"
 }
 
 const MusicQuiz = () => (

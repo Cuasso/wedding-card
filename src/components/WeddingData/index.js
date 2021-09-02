@@ -1,19 +1,20 @@
 import Countdown from './Countdown'
 import Title from '../UI/Title'
 import EventContainer from './EventContainer'
+import ButtonLink from '../UI/ButtonLink'
 
 import classes from './weddingData.module.css'
 import imgWedding from '../../assets/wedding-data.png'
 
 const party = {
     event: "fiesta",
-    link: "https://maps.app.goo.gl/zFSkLS1cL2xrWGzTA",
 }
 
 const ceremony = {
     event: "ceremonia",
-    link: "https://maps.app.goo.gl/zFSkLS1cL2xrWGzTA",
 }
+
+const link = "https://maps.app.goo.gl/zFSkLS1cL2xrWGzTA"
 
 const WeddingData = () => {
     return (
@@ -36,8 +37,8 @@ const WeddingData = () => {
                         <span>Cañuelas, Bs As, Argentina</span>
                     </EventContainer>
                 </div>
+                <ButtonLink link={link} text="Cómo llegar" />
             </div>
-
         </div>
     )
 }

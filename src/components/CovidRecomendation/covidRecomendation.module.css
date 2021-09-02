@@ -16,10 +16,30 @@
 }
 
 .list .item::before {
-    content: "\2022";    
+    content: "\2022";
     color: #e8917b;
     font-weight: bold;
     display: inline-block;
     width: 1em;
     margin-left: -1em;
+}
+
+
+@media only screen and (max-width: 450px){
+    .list {
+        width: 80%;
+    }
+}
+
+
+@media only screen and (max-width: 1100px) and (min-width: 450px) {
+    .list {
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .list {
+        width: 95%;
+    }
 }
