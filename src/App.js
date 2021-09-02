@@ -1,27 +1,10 @@
-import Header from './components/Layout/Header'
-import Card from './components/Card'
-import WeddingData from './components/WeddingData'
-import Reservation from "./components/Reservation";
-import PhotosCarousel from './components/PhotosCarousel'
-import MusicQuiz from './components/MusicQuiz'
-import GiftCard from './components/GiftCard';
-import CovidRecomendation from './components/CovidRecomendation'
-import Footer from './components/Layout/Footer'
-
+import WeddingPage from './pages/Wedding';
 import "./styles.css";
 
-const App = () => {  
+const App = () => {
   return (
     <div className="App">
-      <Header />
-      <Card />
-      <WeddingData />
-      <Reservation />
-      <PhotosCarousel />
-      <MusicQuiz />
-      <GiftCard />
-      <CovidRecomendation />
-      <Footer />
+      <WeddingPage />
     </div>
   );
 }
