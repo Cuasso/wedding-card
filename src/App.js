@@ -20,20 +20,24 @@ const App = () => {
       <Router>
         <Suspense fallback={Loading}>
           <Switch>
-            <Route path='/' exact>
-              <MainPage />
-            </Route>
-            <Route path='/nuestra-boda'>
-              <WeddingPage />
-            </Route>
-            <Route path='/mis-15'>
-              <FithteenPage />
-            </Route>
-            <Route path='/mi-primer-bautismo'>
-              <BaptismPage />
-            </Route>
+            {
+              /*
+                <Route path='/' exact>
+                 <MainPage />
+               </Route>
+               <Route path='/nuestra-boda'>
+                 <WeddingPage />
+               </Route>
+               <Route path='/mis-15'>
+                 <FithteenPage />
+               </Route>
+               <Route path='/mi-primer-bautismo'>
+                 <BaptismPage />
+               </Route>
+               */
+            }
             <Route path='*'>
-              <MainPage />
+              <WeddingPage />
             </Route>
           </Switch>
         </Suspense>
