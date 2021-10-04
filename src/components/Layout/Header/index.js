@@ -1,9 +1,13 @@
+import weddingContext from '../../../stores/wedding-context'
+
 import ArrowDown from "../../UI/ArrowDown";
 
 import classes from './header.module.css'
-import background from '../../../assets/header-background-2.jpg'
+import background from '../../../assets/header-background.svg'
 
 const Header = () => {
+    const data = weddingContext.header
+
     return (
         <div className={classes.header}>
             <img
@@ -12,12 +16,12 @@ const Header = () => {
                 className={classes.parallax}
             />
             <div className={classes.textWrapper}>
-                <h1 className={classes.headline}>Lucho</h1>
-                <h1 className={classes.subHeadline}>&</h1>                         
-                <h1 className={classes.headline}>Joha</h1>
+                <h1 className={classes.headline}>{data.husband}</h1>
+                <h1 className={classes.subHeadline}>&</h1>
+                <h1 className={classes.headline}>{data.wife}</h1>
             </div>
-            <h3 className={classes.date}>18/09/2021</h3>
-            < ArrowDown />            
+            <h3 className={classes.date}>{data.date}</h3>
+            < ArrowDown />
         </div>
     )
 }

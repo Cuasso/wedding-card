@@ -1,3 +1,5 @@
+import WeddingContext from '../../stores/wedding-context'
+
 import Carousel from '../UI/Carousel'
 import CarouselItem from '../UI/Carousel/CarouselItem'
 
@@ -18,14 +20,15 @@ const IgUrl = 'https://www.instagram.com/explore/tags/luchojoha/'
 const PhotosCarousel = props => {
 
     const images = ImportImages()
+    const data = WeddingContext.carousel
 
     return (
         <div className={classes.photosCarousel}>
             <img src={image} className={classes.carouselImg} />
-            <h1 className={classes.hashtag}>#LuchoJoha</h1>
+            <h1 className={classes.hashtag}>{data.hashtag}</h1>
             <div className={classes.message}>
                 <span>
-                    Sumate al hashtag <a href={IgUrl} target='_blank' className={classes.igHashtag}>#LuchoJoha</a> para compartir tus fotos o videos con nosotros.</span> <br />
+                    Sumate al hashtag <a href={data.hashtagLink} target='_blank' className={classes.igHashtag}>{data.hashtag}</a> para compartir tus fotos o videos con nosotros.</span> <br />
                 <span>Ya podes etiquetarnos!!</span>
             </div>
             <Carousel>

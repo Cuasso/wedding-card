@@ -1,27 +1,48 @@
-import Header from './components/Layout/Header'
-import Card from './components/Card'
-import WeddingData from './components/WeddingData'
-import Reservation from "./components/Reservation";
-import PhotosCarousel from './components/PhotosCarousel'
-import MusicQuiz from './components/MusicQuiz'
-import GiftCard from './components/GiftCard';
-import CovidRecomendation from './components/CovidRecomendation'
-import Footer from './components/Layout/Footer'
+import React, { Suspense } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom'
+
+import Loading from './components/Loading';
 
 import "./styles.css";
 
-const App = () => {  
+const WeddingPage = React.lazy(() => import('./pages/WeddingPage'))
+const FithteenPage = React.lazy(() => import('./pages/FithteenPage'))
+const BaptismPage = React.lazy(() => import('./pages/BaptismPage'))
+const MainPage = React.lazy(() => import('./pages/MainPage'))
+
+const App = () => {
   return (
     <div className="App">
-      <Header />
-      <Card />
-      <WeddingData />
-      <Reservation />
-      <PhotosCarousel />
-      <MusicQuiz />
-      <GiftCard />
-      <CovidRecomendation />
-      <Footer />
+      <Router>
+        <Suspense fallback={Loading}>
+          <Switch>
+            {
+              /*
+                <Route path='/' exact>
+                 <MainPage />
+               </Route>
+               <Route path='/nuestra-boda'>
+                 <WeddingPage />
+               </Route>
+               <Route path='/mis-15'>
+                 <FithteenPage />
+               </Route>
+               <Route path='/mi-primer-bautismo'>
+                 <BaptismPage />
+               </Route>
+               */
+            }
+            <Route path='*'>
+              <WeddingPage />
+            </Route>
+          </Switch>
+        </Suspense>
+      </Router>
+
     </div>
   );
 }
