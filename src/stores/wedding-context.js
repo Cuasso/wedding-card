@@ -1,40 +1,48 @@
 const WeddingContext = {
     header: {
-        husband: 'lucas',
-        wife: 'Cami',
-        date: '31/12/2021'
+        husband: 'Fiore',
+        wife: 'Fabi',
+        date: '20/11/2021'
     },
     events: {
-        date: new Date(2021, 11, 31, 18, 0, 0),
-        ceremony: {
-            date: '31 de Diciembre de 2021',
-            hours: '18:00',
-            place: 'Zebra lago Eventos',
-            ubication: 'Cañuelas, Bs As, Argentina',
-            mapsLink: 'https://goo.gl/maps/aDLRvDAScRGWDkJR7'
-        },
+        sameDay: false,
+        date: new Date(2021, 10, 20, 20, 0, 0),
         party: {
-            date: '30 de Diciembre de 2021',
-            hours: '18:00',
-            place: 'Zebra lago Eventos',
-            ubication: 'Cañuelas, Bs As, Argentina',
-            mapsLink: 'https://goo.gl/maps/aDLRvDAScRGWDkJR7'
+            date: '20 de Noviembre de 2021',
+            hours: '21:00',
+            place: 'Golf Club Eventos',
+            ubication: 'Camino de Cintura 9051, Bs As, Argentina',
+            mapsLink: 'https://goo.gl/maps/ks9SCRXobyhBTYr78'
+        },
+        ceremony: {
+            date: '20 de Noviembre de 2021',
+            hours: '20:00',
+            place: 'Golf Club Eventos',
+            ubication: 'Camino de Cintura 9051, Bs As, Argentina',
+            mapsLink: 'https://goo.gl/maps/ks9SCRXobyhBTYr78'
         }
     },
-    reservationLink: 'https://forms.gle/bfsmuzVxT1zNYsSq6',
+    reservation: {
+        message: "¡Esperamos que puedas acompañarnos!\nPor eso te pedimos que nos confirmes tu asistencia antes del 22/10/21\nDress code: ELEGANTE",
+        link: 'https://forms.gle/GqcVqNiWU2KLGBxE9',
+    },
     carousel: {
-        hashtag: '#LucasyCami',
-        hashtagLink: 'https://www.instagram.com/explore/tags/hastag'
+        hashtag: '#FioreyFabi',
+        hashtagLink: 'https://www.instagram.com/explore/tags/FioreyFabi'
     },
     musicQuiz: {
-        formLink: 'https://forms.gle/QDoWA2u9Kpz63y1a7'
+        formLink: 'https://forms.gle/4FM7JdQzdNGciu2aA'
     },
     giftCard: {
-        name: 'Camila Belen',
-        cbu: '0178952612318354563267',
-        dni: 38928949,
-        alias: 'para mancha cosa',
-        bank: 'Banco Provincia de Buenos Aires'
+        message: "Si deseas hacernos un regalo, podes colaborar con nuestra luna de miel...\n En el salón habrá un cofre donde podrás depositar un sobre.",
+        showBank: false,
+        bankData: {
+            name: '',
+            cbu: '',
+            dni: 0,
+            alias: '',
+            bank: ''
+        }
     }
 }
 

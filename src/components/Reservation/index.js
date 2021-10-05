@@ -7,13 +7,18 @@ import classes from "./reservation.module.css"
 
 const buttonProps = {
     text: "Confirmar asistencia",
-    link: WeddingContext.reservationLink,
+    link: WeddingContext.reservation.link,
+}
+
+const style = {
+    marginTop: "15px",
+    margin: "0 auto",
 }
 
 const Reservation = () => (
     <div className={classes.rsvpContainer}>
-        <Title value="RSVP" style={{ marginTop: "15px", margin: "0 auto" }} />
-        <p className={classes.sub}>Esperamos que puedas acompañarnos. ¡Confirmanos tu asistencia!</p>
+        <Title value="RSVP" style={style} />
+        <p className={classes.sub}>{WeddingContext.reservation.message}</p>
         < ButtonLink {...buttonProps} />
     </div>
 )
