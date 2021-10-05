@@ -14,7 +14,8 @@
 }
 
 .sub {
-    font-size: x-large;
+    white-space: pre-line;
+    font-size: large;
     color: #495159;
     padding: 20px;
 }
