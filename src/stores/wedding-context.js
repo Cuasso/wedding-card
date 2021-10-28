@@ -23,7 +23,7 @@ const WeddingContext = {
         }
     },
     reservation: {
-        message: "¡Esperamos que puedas acompañarnos!\nPor eso te pedimos que nos confirmes tu asistencia antes del 22/10/21\nDress code: ELEGANTE",
+        message: "¡Esperamos que puedas acompañarnos!\nPor eso te pedimos que nos confirmes tu asistencia, tienen tiempo hasta el 31/10/21\nDress code: ELEGANTE",
         link: 'https://forms.gle/GqcVqNiWU2KLGBxE9',
     },
     carousel: {
