@@ -1,9 +1,11 @@
+@import '../UI/Colors/colors.module.css';
+
 .giftCardContainer {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     padding: 30px 0;
-    background-color: #f8e8c7;
+    background-color: var(--caqui);
 }
 
 .giftImg {
@@ -15,7 +17,7 @@
 
 .sub {
     font-size: large;
-    color: #14181d;
+    color: var(--font-color);
     padding-bottom: 15px;
     width: 90%;
     margin: 0 auto;

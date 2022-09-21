@@ -79,7 +79,7 @@ input {
 }
 
 input:hover, input:active {
-    background-color: #f5d0c3;
+    background-color: var(--light-pink);
 }
 
 @media only screen and (max-width: 400px) {

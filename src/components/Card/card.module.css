@@ -1,7 +1,7 @@
 @import '../UI/Colors/colors.module.css';
 
 .card {
-    background-color: #f5d0c3;
+    background-color: var(--light-pink);
     min-height: 360px;
     height: max-content;
     grid-template-rows: 2fr 1fr 2fr;
