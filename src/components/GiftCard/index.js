@@ -16,7 +16,6 @@ const GiftCard = () => (
         <Popup text="Datos bancarios">
             <p><strong>Nombre del Titular:</strong> {data.name}</p>
             <p><strong>CBU:</strong> {data.cbu}</p>
-            <p><strong>DNI:</strong> {data.dni}</p>
             <p><strong>ALIAS:</strong> {data.alias}</p>
             <p>{data.bank}</p>
         </Popup>

@@ -16,10 +16,8 @@ const WeddingPage = () => {
             <Card />
             <WeddingData />
             <Reservation />
-            <PhotosCarousel />
             <MusicQuiz />
             <GiftCard />
-            <CovidRecomendation />
             <Footer />
         </Fragment>
     )

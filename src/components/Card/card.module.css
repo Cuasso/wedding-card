@@ -1,7 +1,7 @@
 .card {
     background-color: #f5d0c3;
     height: 360px;
-    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 2fr;
     display: grid;
     justify-content: center;
 }
@@ -19,4 +19,7 @@
     font-size: large;
     max-width: 90%;
     margin: 0 auto;
+    margin-bottom: 20px;
+    display: inline;
+    white-space: pre-line;
 }
