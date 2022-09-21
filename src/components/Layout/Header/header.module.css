@@ -37,7 +37,7 @@
 }
 
 .subHeadline {
-  color: #eb9892;
+  color: var(--pink);
   font-size: 20rem;
 }
 
@@ -55,7 +55,7 @@
   bottom: -6%;
   margin: 0 auto;
   font-size: x-large;
-  color: #eb9892;
+  color: var(--pink);
 }
 
 @media only screen and (max-width: 600px) {
@@ -88,7 +88,7 @@
     font-size: 20rem;
   }
   .date {
-    color: #eb9892;
+    color: var(--pink);
     font-size: x-large;
   }
 }

@@ -8,7 +8,7 @@
 }
 
 .timeWrapper {
-    color: rgb(136, 136, 136);
+    color: var(--grey);
 }
 
 @media only screen and (max-width: 400px) {

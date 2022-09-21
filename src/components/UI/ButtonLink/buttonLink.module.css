@@ -16,5 +16,5 @@
 }
 
 .buttonLink:hover, .buttonLink:active {
-    background-color: rgb(250, 147, 110);
+    background-color: var(--orange);
 }
