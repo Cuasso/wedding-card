@@ -1,3 +1,5 @@
+@import '../../../UI/Colors/colors.module.css';
+
 .indicators {
     display: flex;
     justify-content: center;
@@ -32,7 +34,7 @@
 
 
 .arrow:hover {
-    border-color: #e8917b;
+    border-color: var(--coral);
     box-shadow: 0.5vmin -0.5vmin 0 #f8e8c7;
 }
 

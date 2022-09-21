@@ -1,3 +1,5 @@
+@import '../UI/Colors/colors.module.css';
+
 .photosCarousel {
     width: 100%;
     max-width: 900px;
@@ -24,5 +26,5 @@
 }
 
 .igHashtag {
-    color: #e8917b;
+    color: var(--coral);
 }

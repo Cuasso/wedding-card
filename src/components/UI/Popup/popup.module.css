@@ -1,6 +1,8 @@
 /* Popup style */
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&display=swap');
+@import '../Colors/colors.module.css';
+
 .popup {
     font-family: sans-serif;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -27,7 +29,7 @@
     background: #fff;
     border-radius: 10px;
     padding: 20px;
-    border: 1px solid #e8917b;
+    border: 1px solid var(--coral);
 }
 
 .closeIcon {
@@ -39,13 +41,13 @@
     border-radius: 50%;
     line-height: 20px;
     text-align: center;
-    border: 1px solid #e8917b;
+    border: 1px solid var(--coral);
     font-size: 20px;
-    color: #e8917b;
+    color: var(--coral);
 }
 
 .closeIcon:hover {
-    background-color: #e8917b;
+    background-color: var(--coral);
     color: white;
     border: 1px solid white;
 }
@@ -57,7 +59,7 @@
     margin-top: 0;
     font-size: large;
     padding-top: 15px;
-    color: #495159;
+    color: var(--font-color);
     overflow: auto;
 }
 

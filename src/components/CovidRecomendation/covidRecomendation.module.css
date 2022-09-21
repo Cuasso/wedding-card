@@ -1,3 +1,5 @@
+@import '../UI/Colors/colors.module.css';
+
 .recomendation {
     padding: 40px 0;
 }
@@ -17,7 +19,7 @@
 
 .list .item::before {
     content: "\2022";
-    color: #e8917b;
+    color: var(--coral);
     font-weight: bold;
     display: inline-block;
     width: 1em;

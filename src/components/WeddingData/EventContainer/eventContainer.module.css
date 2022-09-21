@@ -1,3 +1,5 @@
+@import '../../UI/Colors/colors.module.css';
+
 .eventContainer {
     margin: 0 auto;
     padding-top: 15px;
@@ -5,7 +7,7 @@
 
 h1 {
     text-transform: capitalize;
-    color: #e8917b;
+    color: var(--coral);
     font-size: xx-large;
     padding-bottom: 10px;
 }
@@ -15,5 +17,5 @@ h1 {
     font-size: medium;
     display: flex;
     flex-direction: column;
-    color: #495159;
+    color: var(--font-color);
 }

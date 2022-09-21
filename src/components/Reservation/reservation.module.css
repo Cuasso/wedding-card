@@ -1,3 +1,5 @@
+@import '../UI/Colors/colors.module.css';
+
 .rsvpContainer {
     display: flex;
     flex-direction: column;
@@ -15,6 +17,6 @@
 
 .sub {
     font-size: x-large;
-    color: #495159;
+    color: var(--font-color);
     padding: 20px;
 }

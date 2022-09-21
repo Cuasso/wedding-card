@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&display=swap');
+@import 'components/UI/Colors/colors.module.css';
+
 .App {
   text-align: center;
-  color: #495159;
+  color: var(--font-color);
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   z-index: 900;
 }

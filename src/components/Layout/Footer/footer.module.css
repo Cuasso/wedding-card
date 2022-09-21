@@ -1,3 +1,5 @@
+@import '../../UI/Colors/colors.module.css';
+
 .footer {
     height: 100px;
     width: 100%;
