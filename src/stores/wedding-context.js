@@ -25,13 +25,13 @@ const WeddingContext = {
             mapsLink: 'https://goo.gl/maps/vQv8MtQzx3XHDxtv6'
         }
     },
-    reservationLink: 'https://forms.gle/bfsmuzVxT1zNYsSq6',
+    reservationLink: 'https://forms.gle/gWC4PP4AWseR4ESdA',
     carousel: {
         hashtag: '#LucasyCami',
         hashtagLink: 'https://www.instagram.com/explore/tags/hastag'
     },
     musicQuiz: {
-        formLink: 'https://forms.gle/QDoWA2u9Kpz63y1a7'
+        formLink: 'https://forms.gle/saMz4WTCW4pGbF218'
     },
     giftCard: {
         message: 'Si deseas regalarnos algo más que tu presencia.',

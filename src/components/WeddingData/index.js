@@ -12,12 +12,20 @@ const WeddingData = () => {
     const ceremony = events.ceremony
     const party = events.party
 
+    const messageStyle = { fontSize: 'large', paddingTop: '20px' }
+    const strongStyle = { color: '#e8917b' }
+
     return (
         <div className={classes.container}>
             <Countdown date={events.date} />
             <div style={{ display: "flex", flexDirection: "column" }}>
                 <img className={classes.imgWedding} src={imgWedding} alt="wedding" />
                 <Title value="nuestra boda" />
+                <p style={messageStyle}>
+                    Lo que más deseamos es que vengas a divertirte!!<br />
+                    <strong style={strongStyle}>Dress code</strong><br />
+                    Elegante - Elegante sport
+                </p>
                 <div className={classes.weddingEvents}>
                     < EventContainer link={ceremony.mapsLink} event="Ceremonia" >
                         <span>{ceremony.date}</span>
@@ -33,7 +41,7 @@ const WeddingData = () => {
                     </EventContainer>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
