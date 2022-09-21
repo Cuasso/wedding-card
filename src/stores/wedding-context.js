@@ -27,7 +27,7 @@ const WeddingContext = {
     },
     reservationLink: 'https://forms.gle/gWC4PP4AWseR4ESdA',
     carousel: {
-        hashtag: '#LucasyCami',
+        hashtag: '#Anto&Gaston',
         hashtagLink: 'https://www.instagram.com/explore/tags/hastag'
     },
     musicQuiz: {
