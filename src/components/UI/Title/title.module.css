@@ -4,3 +4,18 @@
     font-size: 40px;
     margin: 0 auto;
 }
+
+@media only screen and (max-width: 800px) {
+    .title {
+
+        letter-spacing: 5px;
+        font-size: 26px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .title {
+        letter-spacing: 10px;
+        font-size: 36px;
+    }
+}

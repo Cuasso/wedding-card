@@ -34,6 +34,7 @@ const WeddingContext = {
         formLink: 'https://forms.gle/QDoWA2u9Kpz63y1a7'
     },
     giftCard: {
+        message: 'Si deseas regalarnos algo más que tu presencia.',
         name: 'Antonella',
         cbu: '0270022920027658580038',
         alias: 'FRAN.ANTO.TONGA'
