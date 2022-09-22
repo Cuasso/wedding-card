@@ -3,7 +3,7 @@ import weddingContext from '../../../stores/wedding-context'
 import ArrowDown from "../../UI/ArrowDown";
 
 import classes from './header.module.css'
-import background from '../../../assets/header-background.svg'
+import background from '../../../assets/backgrounds/3.jpeg'
 
 const Header = () => {
     const data = weddingContext.header

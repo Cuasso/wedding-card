@@ -12,7 +12,7 @@ const buttonProps = {
 
 const Reservation = () => (
     <div className={classes.rsvpContainer}>
-        <Title value="RSVP" style={{ marginTop: "15px", margin: "0 auto" }} />
+        <Title value="RSVP" style={{ marginTop: "15px", margin: "0 auto", color: "#a87b05" }} />
         <p className={classes.sub}>Esperamos que puedas acompañarnos. ¡Confirmanos tu asistencia!</p>
         < ButtonLink {...buttonProps} />
     </div>

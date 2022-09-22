@@ -13,7 +13,7 @@ const WeddingData = () => {
     const party = events.party
 
     const messageStyle = { fontSize: 'large', paddingTop: '20px' }
-    const strongStyle = { color: '#e8917b' }
+    const strongStyle = { color: '#deaa0e' }
 
     return (
         <div className={classes.container}>

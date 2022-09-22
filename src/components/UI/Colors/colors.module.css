@@ -1,12 +1,10 @@
 :root {
     --font-color: #495159;
-    --pink: #eb9892;
-    --light-pink: #f5d0c3;
-    --light-pink-two:  #FAC9B8;    
-    --coral: #e8917b;
-    --orange:#fa936e;
-    --light-orange:#f8936e85;
-    --caqui: #f8e8c7;
+    --pink: #a87b05;
+    --light-pink: #e0c451;
+    --light-pink-two:  #deaa0e;    
+    --coral: #deaa0e;
+    --orange:#f5cf5c;
+    --light-orange:#deaa0e6c;
     --grey: #888888;
-
 }
