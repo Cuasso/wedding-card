@@ -5,53 +5,39 @@ import Title from '../UI/Title'
 import EventContainer from './EventContainer'
 
 import classes from './weddingData.module.css'
-import imgWedding from '../../assets/wedding-data.png'
+import imgConfetti from '../../assets/icons/confetti.gif'
+
 
 const WeddingData = () => {
     const events = weddingContext.events
-    const ceremony = events.ceremony
     const party = events.party
-
-    let eventsComponent = null
-
-    if (events.sameDay) {
-        eventsComponent = (
-            <div className={classes.weddingEvents}>
-                < EventContainer link={party.mapsLink} event="Fiesta" >
-                    <span>{party.date}</span>
-                    <span>{party.hours} horas</span>
-                    <span>{party.place}</span>
-                    <span>{party.ubication}</span>
-                </EventContainer>
-            </div>
-        )
-    } else {
-        eventsComponent = (
-            <div className={classes.weddingEvents}>
-                < EventContainer link={ceremony.mapsLink} event="Ceremonia" >
-                    <span>{ceremony.date}</span>
-                    <span>{ceremony.hours} horas</span>
-                    <span>{ceremony.place}</span>
-                    <span>{ceremony.ubication}</span>
-                </EventContainer>
-                < EventContainer link={party.mapsLink} event="Fiesta" >
-                    <span>{party.date}</span>
-                    <span>{party.hours} horas</span>
-                    <span>{party.place}</span>
-                    <span>{party.ubication}</span>
-                </EventContainer>
-            </div>
-        )
-    }
 
     return (
         <div className={classes.container}>
+            <Title value="Faltan" />
             <Countdown date={events.date} />
-            <div style={{ display: "flex", flexDirection: "column" }}>
-                <img className={classes.imgWedding} src={imgWedding} alt="wedding" />
-                <Title value="nuestra boda" />
-                {eventsComponent}
-            </div>
+            <img src={imgConfetti} className={classes.imgParty}/><br/>
+            <Title value="Fiesta" /> 
+            <EventContainer 
+                title="Día"
+                text="Lunes 21 de Noviembre - 13hs"
+                buttonTxt="Agendar"
+                buttonLink="https://calendar.google.com/event?action=TEMPLATE&tmeid=NDQ2ZGJnczRmanBrMWUzMDRwNjBqbzFib3MgMXFjc3JncmJhNWp1OTNpMWN0aWI1NDNnZnNAZw&tmsrc=1qcsrgrba5ju93i1ctib543gfs%40group.calendar.google.com"
+             />
+            <EventContainer 
+                title="Lugar"
+                text="Cielo Recepciones"
+                buttonTxt="Confirmar Asistencia"
+                buttonLink=""
+             />
+                         <EventContainer 
+                title="Lugar"
+                text="Cnel. Juan Francisco Seguí 5936 - Isidro Casanova"
+                buttonTxt="¿Cómo Llegar?"
+                buttonLink="https://goo.gl/maps/Aq8hxDBRvN3xzhH37"
+             />
+
+
         </div>
     )
 }

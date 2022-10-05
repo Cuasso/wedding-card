@@ -1,19 +1,17 @@
 .eventContainer {
     margin: 0 auto;
-    padding-top: 15px;
+    padding-top: 25px;
 }
 
-h1 {
-    text-transform: capitalize;
-    color: #e8917b;
+.eventTitle {
+    text-transform: uppercase;
+    color: var(--color-3);
     font-size: xx-large;
     padding-bottom: 10px;
 }
 
-.content {
+.eventText {
+    font-size: large;
+    color: var(--color-4);
     padding-bottom: 20px;
-    font-size: medium;
-    display: flex;
-    flex-direction: column;
-    color: #495159;
 }

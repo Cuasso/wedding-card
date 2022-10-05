@@ -1,6 +1,17 @@
 .title {
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    font-size: 40px;
-    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-2);
+    font-size: 4rem;
+    line-height: 85px;
+    margin-bottom: 0;
+    background: var(--color-3);
+    background: -webkit-linear-gradient(to right, var(--color-1) 40%, var(--color-3) 80%);
+    background: -moz-linear-gradient(to right, var(--color-1) 40%, var(--color-3) 80%);
+    background: linear-gradient(to right, var(--color-1) 40%, var(--color-3) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0px;
+    border-top: 2px solid var(--color-2);
+    border-bottom: 2px solid var(--color-2);
 }

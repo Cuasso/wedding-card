@@ -5,7 +5,10 @@ import * as dateHelper from './helper'
 
 let timerSize = 140
 
-if (window.outerWidth <= 500 && window.outerWidth > 400) {
+if (window.outerWidth > 500 && window.outerWidth <= 600) {
+    timerSize = 110
+}
+else if (window.outerWidth <= 500 && window.outerWidth > 400) {
     timerSize = 90
 } else if (window.outerWidth <= 400) {
     timerSize = 70
