@@ -1,94 +1,58 @@
-@font-face {
-  font-family: 'fabella';
-  src: url('../../../assets/fonts/fabella-flower.woff2') format('woff2'), 
-       url('../../../assets/fonts/fabella-flower.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-.header {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  flex-direction: column;
-}
-
-.textWrapper {
-  text-align: center;
-  font-family: 'fabella';
-  font-weight: normal;
-  font-style: normal;
-}
-
-.headline {
-  font-size: 20rem;
-  color: black;
-  font-weight: 100;
-  line-height: 0.5;
-}
-
-.headline::first-letter {
-  font-size: 25rem;
-}
-
-.subHeadline {
-  color: #eb9892;
-  font-size: 20rem;
-}
-
-.parallax {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
+.photoPrincipal {
+  max-width: 100%;
+  height: auto;
 }
 
 .date {
-  position: relative;
-  bottom: -6%;
-  margin: 0 auto;
-  font-size: x-large;
-  color: #eb9892;
+  display: inline-block;
+  white-space: nowrap;
+  width: auto;
+  font-family: var(--font-2);
+  font-size: 30px;
+  line-height: 25px;
+  color: var(--color-1);
+  padding: 5px 30px;
+  margin-bottom: 35px;
+  margin-top: 40px;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(to right, var(--color-2), var(--color-1), var(--color-2));
 }
 
-@media only screen and (max-width: 600px) {
-  .headline {
-    font-size: 10rem;
-    font-weight: 100;
-    line-height: 0.5;
-  }
-  .headline::first-letter {
-    font-size: 12rem;
-  }
-  .subHeadline {
-    font-size: 10rem;
-  }
-  .date {
-    font-size: large;
-  }
+.name {
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-2);
+  font-size: 90px;
+  line-height: 85px;
+  margin-bottom: 0;
+  background: var(--color-3);
+  background: -webkit-linear-gradient(to right, var(--color-1) 40%, var(--color-3) 80%);
+  background: -moz-linear-gradient(to right, var(--color-1) 40%, var(--color-3) 80%);
+  background: linear-gradient(to right, var(--color-1) 40%, var(--color-3) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-@media only screen and (min-width: 600px) {
-  .headline {
-    font-size: 20rem;
-    font-weight: 100;
-    line-height: 0.5;
-  }
-  .headline::first-letter {
-    font-size: 25rem;
-  }
-  .subHeadline {
-    font-size: 20rem;
-  }
-  .date {
-    color: #eb9892;
-    font-size: x-large;
-  }
+.description {
+  font-size: 40px;
+  padding: 15px;
+  font-family: var(--font-2);
+  color: var(--color-1);
+}
+
+
+.phrase {
+  padding: 15px;
+}
+
+.phrase img {
+  width: 30px;
+}
+
+.phrase p {
+  color: var(--color-4);
+  font-size: 30px;
+  padding: 15px;
 }

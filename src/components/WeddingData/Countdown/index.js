@@ -14,8 +14,8 @@ if (window.outerWidth <= 500 && window.outerWidth > 400) {
 const timerProps = {
     isPlaying: true,
     size: timerSize,
-    colors: [["#f5d0c3"]],
-    strokeWidth: 2,
+    colors: [["#C8A783"]],
+    strokeWidth: 3,
 };
 
 const renderTime = (dimension, time) => {

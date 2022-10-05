@@ -6,7 +6,7 @@ const WeddingContext = {
     },
     events: {
         sameDay: false,
-        date: new Date(2021, 11, 31, 18, 0, 0),
+        date: new Date(2022, 10, 21, 13, 0, 0),
         ceremony: {
             date: '31 de Diciembre de 2021',
             hours: '18:00',
