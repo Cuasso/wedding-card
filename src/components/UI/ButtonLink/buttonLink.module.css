@@ -2,7 +2,7 @@
     display: block;
     width: 24rem;
     margin: 0 auto;
-    background: #c8a783;
+    background: var(--color-4);
     color: #fff;
     text-transform: capitalize;
     font-family: var(--font-4);
@@ -18,4 +18,36 @@
     -o-transition: all 0.5s 0s ease;
     transition: all 0.5s 0s ease;
     text-decoration: none;
+}
+
+.buttonLinkTwo {
+    display: block;
+    width: 24rem;
+    margin: 0 auto;
+    background: #fff;
+    color: var(--color-4);
+    text-transform: capitalize;
+    font-family: var(--font-4);
+    border-radius: 50px;
+    line-height: 15px;
+    font-size: 17px;
+    padding: 18px 30px;
+    -webkit-box-shadow: 0px 0px 5px -1px rgb(0 0 0 / 40%);
+    -moz-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.40);
+    box-shadow: 0px 0px 5px -1px rgb(0 0 0 / 40%);
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
+    text-decoration: none;
+}
+
+
+.buttonLink:hover {
+    background: var(--color-3);
+}
+
+.buttonLinkTwo:hover {
+    background: var(--color-3);
+    color: #fff;
 }

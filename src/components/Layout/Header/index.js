@@ -15,7 +15,7 @@ const Header = () => {
                 alt="test"
                 className={classes.photoPrincipal}
             />
-            <div className={classes.date}>
+            <br/><div className={classes.date}>
                 21.11.2022
             </div>
             <div className={classes.name}>
