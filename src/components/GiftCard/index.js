@@ -2,7 +2,7 @@ import WeddingContext from '../../stores/wedding-context'
 import Popup from '../UI/Popup'
 
 import classes from './giftCard.module.css'
-import imgGift from '../../assets/images.png'
+import imgGift from '../../assets/line.svg'
 
 const GiftCard = () => {
 
@@ -24,9 +24,8 @@ const GiftCard = () => {
     return (
         <div className={classes.giftCardContainer}>
             <img src={imgGift} className={classes.giftImg} alt="gift" />
-            <p className={classes.sub} style={{ paddingTop: "2rem", whiteSpace: "pre-line" }}>
-                {data.message}
-            </p>
+            <h3>Regalos</h3>
+            <p className={classes.sub}>"Si deseas regalarme algo más que tu hermosa presencia..."</p>
             {bankPopup}
         </div>
     )

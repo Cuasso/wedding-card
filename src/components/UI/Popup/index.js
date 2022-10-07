@@ -1,4 +1,5 @@
 import reactDOM from 'react-dom';
+import ButtonLink from '../ButtonLink'
 
 import { useState, useEffect } from 'react';
 import classes from './popup.module.css'
@@ -37,10 +38,12 @@ const Popup = props => {
     return (
 
         <div>
-            <input
+            <ButtonLink
                 type="button"
-                value={props.text}
+                text={props.text}
                 onClick={togglePopup}
+                style={props.style}
+                secondary={props.secondary}
             />
             {
                 isOpen && <Modal

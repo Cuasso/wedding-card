@@ -7,6 +7,7 @@ const Information = () => {
             <Card title="música"
                 text="Cual es la canción que no debe faltar en la playlist de la fiesta?"
                 btnText="Sugerir Canción"
+
             />            
             <Card
                 title="DRESS CODE"
@@ -17,6 +18,7 @@ const Information = () => {
                 title="Tips y notas"
                 text="Información adicional para tener en cuenta"
                 btnText="+ info"
+                popup="true"
             />
         </div>
     )

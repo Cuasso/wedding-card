@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&display=swap');
 .popup {
     font-family: sans-serif;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     position: fixed;
-    background: rgba(248, 147, 110, 0.521);
+    background: #e4c4a19a;
     width: 100%;
     height: 100vh;
     top: 0;
@@ -27,7 +27,7 @@
     background: #fff;
     border-radius: 10px;
     padding: 20px;
-    border: 1px solid #e8917b;
+    border: 1px solid var(--color-4);
 }
 
 .closeIcon {
@@ -39,13 +39,13 @@
     border-radius: 50%;
     line-height: 20px;
     text-align: center;
-    border: 1px solid #e8917b;
+    border: 1px solid var(--color-4);
     font-size: 20px;
-    color: #e8917b;
+    color: var(--color-4);
 }
 
 .closeIcon:hover {
-    background-color: #e8917b;
+    background-color: var(--color-4);
     color: white;
     border: 1px solid white;
 }

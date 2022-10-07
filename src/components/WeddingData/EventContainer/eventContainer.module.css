@@ -1,6 +1,6 @@
 .eventContainer {
     margin: 0 auto;
-    padding-top: 25px;
+    padding-top: 50px;
 }
 
 .eventTitle {
@@ -14,4 +14,6 @@
     font-size: large;
     color: var(--color-3);
     padding-bottom: 20px;
+    width: 80%;
+    margin: 0 auto;
 }
