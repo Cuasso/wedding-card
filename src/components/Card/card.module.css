@@ -19,12 +19,15 @@
 }
 
 .cardImg {
-    width: 100px;
+    width: 150px;
+    padding: 10px;
 }
 
 .cardTxt {
     font-size: 15px;
     color: #fff;
+    position: absolute;
+    top: 230px
 }
 
 @media only screen and (max-width: 1200px) {

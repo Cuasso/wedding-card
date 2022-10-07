@@ -4,7 +4,6 @@ import Carousel from '../UI/Carousel'
 import CarouselItem from '../UI/Carousel/CarouselItem'
 
 import classes from './photosCarousel.module.css'
-import image from '../../assets/carousel-image.png'
 
 const ImportImages = () => {
     let images = [];
@@ -24,7 +23,6 @@ const PhotosCarousel = props => {
 
     return (
         <div className={classes.photosCarousel}>
-            <img src={image} className={classes.carouselImg} />
             <h1 className={classes.hashtag}>{data.hashtag}</h1>
             <div className={classes.message}>
                 <span>
