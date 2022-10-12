@@ -1,8 +1,8 @@
 import classes from './carouselItem.module.css'
 
 
-const CarouselItem = ({ children, width }) => (
-    <div className={classes.carouselItem} style={{ width: width }}>
+const CarouselItem = ({ children }) => (
+    <div className={classes.carouselItem} >
         {children}
     </div>
 )

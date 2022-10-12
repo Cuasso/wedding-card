@@ -1,7 +1,7 @@
 import weddingContext from '../../../stores/wedding-context'
 
 import classes from './header.module.css'
-import background from '../../../assets/header-background.png'
+import background from '../../../assets/header-brune.jpg'
 import openQuote from '../../../assets/comilla-apertura.svg'
 import closeQuote from '../../../assets/comilla-cierre.svg'
 
@@ -15,7 +15,8 @@ const Header = () => {
                 alt="test"
                 className={classes.photoPrincipal}
             />
-            <br/><div className={classes.date}>
+
+            <br /><div className={classes.date}>
                 21.11.2022
             </div>
             <div className={classes.name}>

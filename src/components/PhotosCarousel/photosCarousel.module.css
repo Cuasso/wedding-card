@@ -6,23 +6,38 @@
     display: flex;
     flex-direction: column;
     padding: 30px;
-}
-
-.message {
-    font-size: large;
     margin-bottom: 50px;
 }
 
-.carouselImg {
-    width: 119px;
-    height: 103px;
-    margin: 0 auto;
+.message {
+    font-size: 25px;
+    color: var(--color-3);
 }
+
+.carouselImg {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cameraImg {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+  }
 
 .hashtag {
-    padding: 20px 0;
-}
-
-.igHashtag {
-    color: #e8917b;
+    width: 100%;
+    display: inline-block;
+    font-family:'Suranna', serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 70px;
+    margin-bottom: 0;
+    background: var(--color-1);
+    background: -webkit-linear-gradient(to right, var(--color-1) 40%, var(--color-3) 80%);
+    background: -moz-linear-gradient(to right, var(--color-1) 40%, var(--color-3) 80%);
+    background: linear-gradient(to right, var(--color-1) 40%, var(--color-3) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 15px;
 }

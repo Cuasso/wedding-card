@@ -1,5 +1,5 @@
 import WeddingContext from '../../stores/wedding-context'
-
+import cameraImg from '../../assets/icons/camera.gif'
 import Carousel from '../UI/Carousel'
 import CarouselItem from '../UI/Carousel/CarouselItem'
 
@@ -14,8 +14,6 @@ const ImportImages = () => {
     return images
 }
 
-const IgUrl = 'https://www.instagram.com/explore/tags/luchojoha/'
-
 const PhotosCarousel = props => {
 
     const images = ImportImages()
@@ -23,12 +21,11 @@ const PhotosCarousel = props => {
 
     return (
         <div className={classes.photosCarousel}>
-            <h1 className={classes.hashtag}>{data.hashtag}</h1>
+            <h1 className={classes.hashtag}>Un recorrido de estos 15 años</h1>
             <div className={classes.message}>
-                <span>
-                    Sumate al hashtag <a href={data.hashtagLink} target='_blank' className={classes.igHashtag}>{data.hashtag}</a> para compartir tus fotos o videos con nosotros.</span> <br />
-                <span>Ya podes etiquetarnos!!</span>
+                Junto a personas que son muy importantes en mi vida
             </div>
+            <img src={cameraImg} className={classes.cameraImg}/>
             <Carousel>
                 {
                     images.map(image =>
@@ -36,7 +33,8 @@ const PhotosCarousel = props => {
                             <img src={image}
                                 key={image}
                                 alt={image}
-                                style={{ maxHeight: "100%", maxWidth: "100%" }} />
+                                className={classes.carouselImg}
+                            />
                         </CarouselItem>)
                 }
             </Carousel>

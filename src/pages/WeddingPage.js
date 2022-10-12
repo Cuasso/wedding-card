@@ -13,8 +13,8 @@ const WeddingPage = () => {
         <Fragment>
             <Header />
             <WeddingData />
-            <PhotosCarousel />
             <Information />
+            <PhotosCarousel />            
             <IgSection />
             <GiftCard />
             <Footer />
