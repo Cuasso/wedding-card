@@ -12,7 +12,7 @@ const Card = (props) => {
         ? (<Popup text={props.btnText} style={buttonStyle} secondary="true">
             TIPS y DEMAS
             </Popup>)
-        : (<ButtonLink text={props.btnText} style={buttonStyle} secondary="true" />)
+        : (<ButtonLink text={props.btnText} style={buttonStyle} secondary="true"  link={props.link}/>)
     return (
         <div className={classes.card}>
             <h3 className={classes.cardTitle}>{props.title}</h3>

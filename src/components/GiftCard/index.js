@@ -26,8 +26,8 @@ const GiftCard = () => {
             
             <h3>Regalos</h3>
             <img src={imgGift} className={classes.giftImg} alt="gift" />
-            <p className={classes.sub}>"Si deseas regalarme algo más que tu hermosa presencia..."</p>
-            {bankPopup}
+            <p className={classes.sub}>"Si deseas regalarme algo más que tu hermosa presencia en la recepción habrá un buzón para que dejes tu obsequio."</p>
+
         </div>
     )
 }

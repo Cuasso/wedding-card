@@ -30,7 +30,7 @@ const WeddingData = () => {
                     title="Lugar"
                     text="Cielo Recepciones"
                     buttonTxt="Confirmar Asistencia"
-                    buttonLink=""
+                    buttonLink="https://forms.gle/TukqvqTiVaj4Yvr88"
                 />
                 <EventContainer
                     title="Lugar"
