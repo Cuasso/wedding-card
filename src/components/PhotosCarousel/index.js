@@ -1,9 +1,11 @@
 import WeddingContext from '../../stores/wedding-context'
 import cameraImg from '../../assets/icons/camera.gif'
+import lineImg from '../../assets/line.svg'
 import Carousel from '../UI/Carousel'
 import CarouselItem from '../UI/Carousel/CarouselItem'
 
 import classes from './photosCarousel.module.css'
+import { Fragment } from 'react/cjs/react.production.min'
 
 const ImportImages = () => {
     let images = [];
@@ -19,13 +21,20 @@ const PhotosCarousel = props => {
     const images = ImportImages()
     const data = WeddingContext.carousel
 
-    return (
-        <div className={classes.photosCarousel}>
-            <h1 className={classes.hashtag}>Un recorrido de estos 15 años</h1>
-            <div className={classes.message}>
-                Junto a personas que son muy importantes en mi vida
-            </div>
-            <img src={cameraImg} className={classes.cameraImg}/>
+    return ( 
+        <Fragment>
+            <img src={lineImg} />
+            <div className={classes.photosCarousel}>
+            {
+                /*
+                <div className={classes.photosCarousel}>
+                <h1 className={classes.hashtag}>Un recorrido de estos 15 años</h1>
+                <div className={classes.message}>
+                    Junto a personas que son muy importantes en mi vida
+                </div>                
+                */
+            }            
+            <img src={cameraImg} className={classes.cameraImg} />
             <Carousel>
                 {
                     images.map(image =>
@@ -39,6 +48,7 @@ const PhotosCarousel = props => {
                 }
             </Carousel>
         </div>
+        </Fragment>
     )
 }
 

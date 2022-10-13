@@ -8,7 +8,7 @@ const Information = () => {
     return (
         <div className={classes.containerInfo}>
             <Card title="música"
-                text="Cual es la canción que no debe faltar en la playlist de la fiesta?"
+                text="Cuál es la canción que no debe faltar en la playlist de la fiesta?"
                 btnText="Sugerir Canción"
                 imgLink={musicImg}
                 link='https://forms.gle/MiwJqfgZtKz6cfFR7'

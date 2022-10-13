@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "mis-15-brunne",
+    "site": "mis-15-brune",
     "public": "build",
     "ignore": [
       "firebase.json",
