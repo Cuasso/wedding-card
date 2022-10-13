@@ -8,26 +8,23 @@
   background-image: url('../../assets/background-ig.jpeg');
   width: auto;
   min-height: 400px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-attachment: scroll;
   background-size: cover;
   padding-bottom: 40px;
 }
 
 .title {
   font-family: var(--font-2);
-  font-size: 50px;
+  font-size: 55px;  
   color: #fff;
-  padding-top: 100px;
+  padding-top: 100px;  
   text-shadow: 5px 5px 2px var(--color-4);
   margin: 0 auto;
 }
 
 .text {
-  padding-top: 10px;
   font-size: 20px;
-  color: var(--color-4);
+  color: var(--color-3);
   margin: 0 auto;
 }
 
@@ -40,10 +37,11 @@
   margin: 0 auto;
 }
 
-.igImg {
-  padding-top: 30px;
-  width: 100px;
+.videoImg {
+  width: 200px;
   height: auto;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 .lineFront {

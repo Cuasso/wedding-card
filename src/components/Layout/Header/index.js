@@ -27,7 +27,7 @@ const Header = () => {
             </div>
             <div className={classes.phrase}>
                 <img src={openQuote} />
-                <p>Te espero para compartir la alegría de esa noche que será para mi mágica, inolvidable y única.</p>
+                <p>Los espero para compartir la felicidad de ese día que será, sin dudas, mágico, único e inolvidable.</p>
                 <img src={closeQuote} />
             </div>
         </div>

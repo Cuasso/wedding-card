@@ -10,7 +10,7 @@ const buttonStyle = {
 const Card = (props) => {
     const button = props.popup
         ? (<Popup text={props.btnText} style={buttonStyle} secondary="true">
-            TIPS y DEMAS
+            TIPS y DEMÁS
             </Popup>)
         : (<ButtonLink text={props.btnText} style={buttonStyle} secondary="true"  link={props.link}/>)
     return (
