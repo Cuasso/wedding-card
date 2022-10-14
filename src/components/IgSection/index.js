@@ -15,8 +15,8 @@ const IgSection = () => {
                 <img className={classes.lineFront} src={line2Img} />
                 <div className={classes.title}>¡Mi gran fiesta junto a ustedes!</div>
                 <div style={{paddingTop:'30px'}}>
-                <div className={classes.text}>¡Si deseas ser parte de mi video, te pido que me envies tu foto favorita conmigo!</div>
-                <div className={classes.text}>Tenes tiempo para enviar tu foto por mail hasta el <strong>31/10/2022</strong></div>                
+                <div className={classes.text}>¡Si deseás ser parte de mi video, te pido que me envíes tu foto favorita conmigo!</div>
+                <div className={classes.text}>Tenés tiempo para enviar tu foto por mail hasta el <strong>31/10/2022</strong></div>                
                 </div>
                 <img src={videoImg} className={classes.videoImg}/>
                 <ButtonLink

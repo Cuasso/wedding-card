@@ -8,11 +8,9 @@ const GiftCard = () => {
 
     return (
         <div className={classes.giftCardContainer}>
-            
             <h3>Regalos</h3>
             <img src={imgGift} className={classes.giftImg} alt="gift" />
-            <p className={classes.sub}>"Si desean regalarme algo mas que su hermosa presencia, en la recepción van a encontrar un buzón para los obsequios."</p>
-
+            <p className={classes.sub}>"Si desean regalarme algo más que su hermosa presencia, en la recepción van a encontrar un buzón para los obsequios."</p>
         </div>
     )
 }
