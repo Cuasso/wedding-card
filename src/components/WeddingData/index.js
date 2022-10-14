@@ -27,12 +27,6 @@ const WeddingData = () => {
                     Elegante - Elegante sport
                 </p>
                 <div className={classes.weddingEvents}>
-                    < EventContainer link={ceremony.mapsLink} event="Ceremonia" >
-                        <span>{ceremony.date}</span>
-                        <span>{ceremony.hours} horas</span>
-                        <span>{ceremony.place}</span>
-                        <span>{ceremony.ubication}</span>
-                    </EventContainer>
                     < EventContainer link={party.mapsLink} event="Fiesta" >
                         <span>{party.date}</span>
                         <span>{party.hours} horas</span>

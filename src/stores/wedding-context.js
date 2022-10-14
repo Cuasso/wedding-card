@@ -1,28 +1,22 @@
 const WeddingContext = {
     header: {
-        husband: 'Antonella',
-        wife: 'Gaston',
-        date: '11/12/2022'
+        husband: 'Mis',
+        wife: 'años',
+        date: '12/11/2022',
+        isFifteen: true
     },
     card: {
-        header: "¡Bienvenidos a nuestro casamiento!",
-        body: "Hola Familia y Amigos!!\n Queremos contarles con mucha alegría que después de tanta espera llego el día en que festejaremos nuestro casamiento.\n Además el bautismo y primer añito de Fran.\n Va ser un día muy especial, por eso queremos contar con tu presencia!"
+        header: "¡Bienvenidos a mi fiesta de 15!",
+        body: "Los espero para compartir la felicidad de ese noche que será, sin dudas, mágico, único e inolvidable."
     },
     events: {
-        date: new Date(2022, 11, 11, 12, 0, 0),
-        ceremony: {
-            date: '11 de Diciembre de 2022',
-            hours: '12:00',
-            place: 'Parroquia Nuestra Señora del Pilar',
-            ubication: 'Paso de los libres 695, Ituzaingó, Bs As',
-            mapsLink: 'https://goo.gl/maps/ALFdNnXze6DMFSzN7'
-        },
+        date: new Date(2022, 10, 11, 12, 21, 30),
         party: {
-            date: '11 de Diciembre de 2021',
-            hours: '13:00',
-            place: 'Palacio D´OR eventos',
-            ubication: 'Martin fierro 3651 B1715, Ituzaingó, Bs As',
-            mapsLink: 'https://goo.gl/maps/vQv8MtQzx3XHDxtv6'
+            date: '12 de Noviembre de 2022',
+            hours: '21:30',
+            place: 'Miña Terra Events',
+            ubication: 'Lino Lagos 1769, Aldo Bonzi, Bs As',
+            mapsLink: 'https://goo.gl/maps/bVs2jVNqCDkMVMZQ8'
         }
     },
     reservationLink: 'https://forms.gle/gWC4PP4AWseR4ESdA',

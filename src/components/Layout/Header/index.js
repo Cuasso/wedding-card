@@ -17,7 +17,7 @@ const Header = () => {
             />
             <div className={classes.textWrapper}>
                 <h1 className={classes.headline}>{data.husband}</h1>
-                <h1 className={classes.subHeadline}>&</h1>
+                <h1 className={classes.subHeadline}>{data.isFifteen ? '15' : '&'}</h1>
                 <h1 className={classes.headline}>{data.wife}</h1>
             </div>
             <h3 className={classes.date}>{data.date}</h3>
