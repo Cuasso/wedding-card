@@ -33,6 +33,7 @@ const WeddingData = () => {
                     buttonLink="https://calendar.google.com/event?action=TEMPLATE&tmeid=NDQ2ZGJnczRmanBrMWUzMDRwNjBqbzFib3MgMXFjc3JncmJhNWp1OTNpMWN0aWI1NDNnZnNAZw&tmsrc=1qcsrgrba5ju93i1ctib543gfs%40group.calendar.google.com"
                 />
                 <EventContainer
+                    id="confirmar-asistencia"
                     title="Dirección"
                     text="Cnel. Juan Francisco Seguí 5936 - Isidro Casanova"
                     buttonTxt="¿Cómo Llegar?"
