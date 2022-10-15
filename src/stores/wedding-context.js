@@ -1,7 +1,7 @@
 const WeddingContext = {
     header: {
         husband: 'Mis',
-        wife: 'años',
+        wife: 'Años',
         date: '12/11/2022',
         isFifteen: true
     },

@@ -1,8 +1,6 @@
-@import '../UI/Colors/colors.module.css';
-
 .photosCarousel {
     width: 100%;
-    max-width: 900px;
+    max-width: 650px;
     margin: 0 auto;
     height: max-content;
     display: flex;
@@ -26,5 +24,10 @@
 }
 
 .igHashtag {
-    color: var(--coral);
+    color: var(--orange);
+}
+
+.photos {
+    width: 75%;
+    height: auto;
 }

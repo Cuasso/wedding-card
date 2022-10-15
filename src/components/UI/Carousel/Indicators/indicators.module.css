@@ -1,5 +1,3 @@
-@import '../../../UI/Colors/colors.module.css';
-
 .indicators {
     display: flex;
     justify-content: center;
@@ -15,8 +13,8 @@
     width: 3vmin;
     height: 3vmin;
     background: transparent;
-    border-top: 1vmin solid var(--caqui);
-    border-right: 1vmin solid var(--caqui);
+    border-top: 1vmin solid var(--coral);
+    border-right: 1vmin solid var(--coral);
     box-shadow: 0 0 0 lightgray;
     transition: all 200ms ease;
     top:50%
@@ -35,7 +33,7 @@
 
 .arrow:hover {
     border-color: var(--coral);
-    box-shadow: 0.5vmin -0.5vmin 0 var(--caqui);
+    box-shadow: 0.5vmin -0.5vmin 0 var(--font-color);
 }
 
 .arrow:before { 

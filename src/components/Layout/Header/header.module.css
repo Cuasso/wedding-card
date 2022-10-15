@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'fabella';
-  src: url('../../../assets/fonts/fabella-flower.woff2') format('woff2'), 
-       url('../../../assets/fonts/fabella-flower.woff') format('woff');
+  src: url('../../../assets/fonts/fabella-flower.woff2') format('woff2'),
+    url('../../../assets/fonts/fabella-flower.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -32,13 +32,8 @@
   line-height: 0.5;
 }
 
-.headline::first-letter {
-  font-size: 25rem;
-}
-
 .subHeadline {
   color: var(--pink);
-  font-size: 20rem;
 }
 
 .parallax {
@@ -48,6 +43,17 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
+}
+
+
+.name {
+  position: relative;
+  top: -100%;
+  margin: 0 auto;
+  font-size: 15rem;
+  color: var(--pink);
+  font-weight: 100;
+  line-height: 0.5;
 }
 
 .date {
@@ -64,12 +70,15 @@
     font-weight: 100;
     line-height: 0.5;
   }
+
   .headline::first-letter {
     font-size: 12rem;
   }
+
   .subHeadline {
     font-size: 10rem;
   }
+
   .date {
     font-size: large;
   }
@@ -81,12 +90,21 @@
     font-weight: 100;
     line-height: 0.5;
   }
+
+  .name {
+    font-size: 20rem;
+    font-weight: 100;
+    line-height: 0.5;
+  }
+
   .headline::first-letter {
     font-size: 25rem;
   }
+
   .subHeadline {
     font-size: 20rem;
   }
+
   .date {
     color: var(--pink);
     font-size: x-large;

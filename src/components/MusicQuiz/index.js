@@ -4,7 +4,7 @@ import ButtonLink from '../UI/ButtonLink'
 
 import classes from './musicQuiz.module.css'
 import musicImg from '../../assets/icons/music_pink.gif'
-import backgroundImg from '../../assets/music-background/1.jpeg'
+import backgroundImg from '../../assets/music-background.jpg'
 
 const buttonProps = {
     text: "Recomendar canciones",

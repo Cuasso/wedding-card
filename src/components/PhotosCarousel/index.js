@@ -38,7 +38,7 @@ const PhotosCarousel = props => {
                             <img src={image}
                                 key={image}
                                 alt={image}
-                                style={{ maxHeight: "100%", maxWidth: "100%" }} />
+                                className={classes.photos} />
                         </CarouselItem>)
                 }
             </Carousel>

@@ -7,7 +7,7 @@ const Card = () => {
 
     return (
         <div className={classes.card}>
-            <Title style={{ gridRow: " 2 / 3" }} value={card.header} />
+            <Title value={card.header} />
             <span className={classes.body}>
                 {card.body}
             </span>
