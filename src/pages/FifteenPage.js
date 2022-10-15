@@ -16,7 +16,6 @@ const FifteenPage = () => {
             <Header />
             <Card />
             <WeddingData />
-            <Reservation />
             <PhotosCarousel />
             <MusicQuiz />
             <GiftCard />

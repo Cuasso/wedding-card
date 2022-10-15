@@ -21,17 +21,14 @@ const WeddingContext = {
     },
     reservationLink: 'https://forms.gle/gWC4PP4AWseR4ESdA',
     carousel: {
-        hashtag: '#Anto&Gaston',
-        hashtagLink: 'https://www.instagram.com/explore/tags/hastag'
+        hashtag: '#15Vica',
+        hashtagLink: 'https://www.instagram.com/explore/tags/15Vica/'
     },
     musicQuiz: {
-        formLink: 'https://forms.gle/saMz4WTCW4pGbF218'
+        formLink: 'https://forms.gle/n8Y6cmsKNd2jK2yx5'
     },
     giftCard: {
-        message: 'Si deseas regalarnos algo más que tu presencia.',
-        name: 'Antonella',
-        cbu: '0270022920027658580038',
-        alias: 'FRAN.ANTO.TONGA'
+        message: 'Si desean regalarme algo más que su hermosa presencia, en la recepción van a encontrar un buzón para los obsequios.',
     }
 }
 

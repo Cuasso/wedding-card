@@ -11,8 +11,8 @@
 .giftImg {
     margin: 0 auto;
     margin-top: 15px;
-    width: 100px;
-    height: 100px;
+    width: auto;
+    height: 200px;
 }
 
 .sub {
