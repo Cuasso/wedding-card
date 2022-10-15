@@ -7,11 +7,7 @@ import classes from './weddingData.module.css'
 
 const WeddingData = () => {
     const events = weddingContext.events
-    const ceremony = events.ceremony
     const party = events.party
-
-    const messageStyle = { fontSize: 'large', paddingTop: '20px' }
-    const strongStyle = { color: '#deaa0e' }
 
     return (
         <div className={classes.container}>
@@ -25,7 +21,7 @@ const WeddingData = () => {
                         <span>{party.place}</span>
                         <span>{party.ubication}</span>
                     </EventContainer>
-                    < EventContainer event="Dress Code - Elegante" withOut="true">
+                    < EventContainer event="Dress Code - Elegante" withOut="true" style={{ paddingTop: '30px' }}>
                     </EventContainer>
                     < EventContainer event="Reservación" link="https://forms.gle/xKMkknvj3LSSCxuB7" buttonTxt="Confirmar asistencia">
                         <span>Esperamos que puedas acompañarnos. ¡Confirmanos tu asistencia!</span>

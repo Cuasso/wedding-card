@@ -7,7 +7,7 @@ import imgGift from '../../assets/icons/gift_pink.gif'
 
 const data = WeddingContext.giftCard
 const styleTitle = {
-    color: '#dd8c76'
+    color: '#d08e7c'
 }
 
 const GiftCard = () => (
