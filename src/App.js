@@ -10,9 +10,6 @@ import Loading from './components/Loading';
 import "./styles.css";
 
 const WeddingPage = React.lazy(() => import('./pages/WeddingPage'))
-const FifteenPage = React.lazy(() => import('./pages/FifteenPage'))
-const BaptismPage = React.lazy(() => import('./pages/BaptismPage'))
-const MainPage = React.lazy(() => import('./pages/MainPage'))
 
 const App = () => {
   return (
@@ -37,7 +34,7 @@ const App = () => {
                */
             }
             <Route path='*'>
-              <FifteenPage />
+              <WeddingPage />
             </Route>
           </Switch>
         </Suspense>

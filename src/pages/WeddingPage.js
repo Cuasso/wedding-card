@@ -9,16 +9,20 @@ import CovidRecomendation from '../components/CovidRecomendation'
 import Footer from '../components/Layout/Footer'
 import { Fragment } from 'react';
 
+import classes from './wedding.module.css'
+
 const WeddingPage = () => {
     return (
         <Fragment>
             <Header />
-            <Card />
-            <WeddingData />
-            <Reservation />
-            <MusicQuiz />
-            <GiftCard />
-            <Footer />
+            <div className={classes.background}>
+                <Card />
+                <WeddingData />
+                <Reservation />
+                <MusicQuiz />
+                <GiftCard />
+                <Footer />
+            </div>
         </Fragment>
     )
 }

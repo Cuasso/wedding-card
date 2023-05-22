@@ -10,7 +10,7 @@
     "react-countdown-circle-timer": "^2.5.3",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.1",
-    "react-scripts": "^4.0.3",
+    "react-scripts": "^5.0.1",
     "react-swipeable": "^6.1.2",
     "web-vitals": "^1.1.2"
   },
@@ -39,7 +39,6 @@
     ]
   },
   "main": "index.js",
-  "devDependencies": {},
   "author": "Cuassolo Facundo",
   "license": "ISC"
 }

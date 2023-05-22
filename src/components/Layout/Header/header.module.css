@@ -32,10 +32,6 @@
   line-height: 0.5;
 }
 
-.subHeadline {
-  color: var(--pink);
-}
-
 .parallax {
   position: absolute;
   left: 0;
@@ -48,25 +44,30 @@
 
 .name {
   position: relative;
-  top: -100%;
   margin: 0 auto;
   font-size: 15rem;
-  color: var(--pink);
+  color: var(--black);
   font-weight: 100;
   line-height: 0.5;
 }
 
 .date {
   position: relative;
-  bottom: -6%;
+  bottom: -3%;
   margin: 0 auto;
   font-size: x-large;
-  color: var(--pink);
+  color: var(--dark-beige);
 }
 
 @media only screen and (max-width: 600px) {
   .headline {
     font-size: 10rem;
+    font-weight: 100;
+    line-height: 0.5;
+  }
+
+  .name {
+    font-size: 8rem;
     font-weight: 100;
     line-height: 0.5;
   }

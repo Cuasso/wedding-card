@@ -1,5 +1,5 @@
 .card {    
-    background-color: var(--light-pink);
+    background-color: inherit;
     min-height: 300px;
     height: max-content;
     display: flex;

@@ -7,10 +7,10 @@ const WeddingContext = {
     },
     card: {
         header: "¡Bienvenidos a mi fiesta de 15!",
-        body: "Los espero para compartir la felicidad de ese noche que será, sin dudas, mágico, único e inolvidable."
+        body: "Hay momentos en la vida que son especiales por sí solos, pero al compartirlos con personas importantes como vos, se convierten en momentos inolvidables.\n¡Te esperamos en nuestra boda!"
     },
     events: {
-        date: new Date(2022, 10, 11, 12, 21, 30),
+        date: new Date(2023, 10, 26, 12, 0),
         party: {
             date: '12 de Noviembre de 2022',
             hours: '21:30',
