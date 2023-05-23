@@ -12,11 +12,11 @@ const WeddingContext = {
     events: {
         date: new Date(2023, 10, 26, 12, 0),
         party: {
-            date: '12 de Noviembre de 2022',
-            hours: '21:30',
-            place: 'Miña Terra Events',
-            ubication: 'Lino Lagos 1769, Aldo Bonzi, Bs As',
-            mapsLink: 'https://goo.gl/maps/bVs2jVNqCDkMVMZQ8'
+            date: '26 de Noviembre de 2023',
+            hours: 'Ceremonia 12:00hs\nFiesta 13:00hs',
+            place: 'Janos Acceso Oeste',
+            ubication: 'Autopista Acceso Oeste 31, Bs As',
+            mapsLink: 'https://maps.app.goo.gl/FNw7cLYUQPgpjdTh9'
         }
     },
     reservationLink: 'https://forms.gle/gWC4PP4AWseR4ESdA',

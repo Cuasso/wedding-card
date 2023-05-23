@@ -1,13 +1,11 @@
-@import '../../UI/Colors/colors.module.css';
-
 .buttonLink {
     display: block;
     text-align: center;
-    background-color: var(--coral);
+    background-color: var(--dark-beige);
     color: white;
     padding: 14px 25px;
     text-decoration: none;
-    border: 1.5px solid var(--coral);
+    border: 1.5px solid var(--dark-beige);
     border-radius: 3px;
     min-width: 100px;
     max-width: fit-content;
@@ -16,5 +14,5 @@
 }
 
 .buttonLink:hover, .buttonLink:active {
-    background-color: var(--orange);
+    background-color: var(--dark-beige-2);
 }

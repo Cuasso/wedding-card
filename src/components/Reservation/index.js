@@ -4,6 +4,7 @@ import Title from '../UI/Title'
 import ButtonLink from '../UI/ButtonLink'
 
 import classes from "./reservation.module.css"
+import calendar from "../../assets/calendar.png"
 
 const buttonProps = {
     text: "Confirmar asistencia",
@@ -12,8 +13,8 @@ const buttonProps = {
 
 const Reservation = () => (
     <div className={classes.rsvpContainer}>
-        <Title value="RSVP" style={{ marginTop: "15px", margin: "0 auto", color: "#a87b05" }} />
-        <p className={classes.sub}>Esperamos que puedas acompañarnos. ¡Confirmanos tu asistencia!</p>
+        <img src={calendar} className={classes.rsvpImg}/>       
+        <p className={classes.sub}>Esperamos que seas parte de esta gran celebración.<br/>¡Confirmanos tu asistencia!</p>
         < ButtonLink {...buttonProps} />
     </div>
 )
