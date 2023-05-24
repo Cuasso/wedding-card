@@ -29,7 +29,7 @@
     background: white;
     border-radius: 10px;
     padding: 20px;
-    border: 1px solid var(--coral);
+    border: 1px solid var(--dark-beige);
 }
 
 .closeIcon {
@@ -41,13 +41,13 @@
     border-radius: 50%;
     line-height: 20px;
     text-align: center;
-    border: 1px solid var(--coral);
+    border: 1px solid var(--dark-beige);
     font-size: 20px;
-    color: var(--coral);
+    color: var(--dark-beige);
 }
 
 .closeIcon:hover {
-    background-color: var(--coral);
+    background-color: var(--dark-beige);
     color: white;
     border: 1px solid white;
 }
@@ -67,7 +67,7 @@ input {
     display: block;
     text-align: center;
     font-weight: 500;
-    background-color: var(--light-pink-two);
+    background-color: var(--beige);
     color: white;
     padding: 14px 25px;
     border: 1px solid white;
@@ -79,7 +79,7 @@ input {
 }
 
 input:hover, input:active {
-    background-color: var(--light-pink);
+    background-color: var(--beige);
 }
 
 @media only screen and (max-width: 400px) {

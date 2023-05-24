@@ -21,8 +21,8 @@ const WeddingPage = () => {
                 <WeddingData />
                 <Reservation />
                 <Dresscode />
-                <MusicQuiz />
                 <GiftCard />
+                <MusicQuiz />
                 <Footer />
             </div>
         </Fragment>

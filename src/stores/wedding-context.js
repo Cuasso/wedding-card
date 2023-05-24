@@ -28,7 +28,7 @@ const WeddingContext = {
         formLink: 'https://forms.gle/n8Y6cmsKNd2jK2yx5'
     },
     giftCard: {
-        message: 'Si desean regalarme algo más que su hermosa presencia, en la recepción van a encontrar un buzón para los obsequios.',
+        message: 'Para realizarnos un regalo, podés colaborar con nuestra Luna de Miel, haciendo clic en el siguiente botón.',
     }
 }
 

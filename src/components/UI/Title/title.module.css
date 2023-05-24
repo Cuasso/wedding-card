@@ -1,7 +1,7 @@
 .title {
     text-transform: uppercase;
     letter-spacing: 10px;
-    font-size: 30px;
+    font-size: 35px;
     margin: 0 auto;
 }
 
@@ -9,13 +9,13 @@
     .title {
 
         letter-spacing: 8px;
-        font-size: 26px;
+        font-size: 35px;
     }
 }
 
 @media only screen and (min-width: 800px) {
     .title {
         letter-spacing: 10px;
-        font-size: 30px;
+        font-size: 35px;
     }
 }
