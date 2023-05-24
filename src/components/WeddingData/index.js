@@ -16,7 +16,7 @@ const WeddingData = () => {
             <img className={classes.imgWedding} src={glasses} alt="glasses"/>
             <div style={{ display: "flex", flexDirection: "column" }}>
                 <div className={classes.weddingEvents}>
-                    < EventContainer link={party.mapsLink} event="Celebracion"
+                    < EventContainer link={party.mapsLink} event="Celebración"
                         buttonTxt="Cómo llegar">
                         <span>{party.date}</span>
                         <span>{party.hours} horas</span>

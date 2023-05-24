@@ -5,7 +5,8 @@ import Reservation from "../components/Reservation";
 import PhotosCarousel from '../components/PhotosCarousel'
 import MusicQuiz from '../components/MusicQuiz'
 import GiftCard from '../components/GiftCard';
-import CovidRecomendation from '../components/CovidRecomendation'
+import Dresscode from '../components/Dresscode';
+
 import Footer from '../components/Layout/Footer'
 import { Fragment } from 'react';
 
@@ -19,6 +20,7 @@ const WeddingPage = () => {
                 <Card />
                 <WeddingData />
                 <Reservation />
+                <Dresscode />
                 <MusicQuiz />
                 <GiftCard />
                 <Footer />

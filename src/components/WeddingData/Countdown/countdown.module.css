@@ -1,7 +1,7 @@
 .countdown {
     display: flex;
     margin: 0 auto;
-    max-width: 700px;
+    max-width: 80%;
     justify-content: space-around;
     font-family: sans-serif;
     text-align: center;

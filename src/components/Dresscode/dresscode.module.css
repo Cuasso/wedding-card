@@ -1,0 +1,19 @@
+.container {    
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.body {
+    font-size: large;
+}
+
+.dressCodeImg {
+    width: auto;
+    height: 190px;
+}
+
+.colors {
+    display: inline-flex;
+    margin: 0 auto;
+    gap: 15px
+}
