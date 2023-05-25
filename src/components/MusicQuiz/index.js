@@ -9,7 +9,7 @@ import Title from '../UI/Title'
 
 const buttonProps = {
     text: "Recomendar canciones",
-    link: WeddingContext.musicQuiz.formLink,
+    link: 'https://forms.gle/jg58gCf5V8jrUu318',
     style: {
         borderRadius: '50px'
     }

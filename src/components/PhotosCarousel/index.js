@@ -65,7 +65,7 @@ const PhotosCarousel = props => {
             <div className={classes.message}>
                 <span>    
                 ¡Preparate para nuestro gran día!<br/>
-                Etiquetanos en instagram con nuestro hashtag <a href={IgUrl} target='_blank' className={classes.igHashtag}>{data.hashtag}</a> en tus fotos o videos.</span> <br />
+                Etiquetanos en instagram con nuestro hashtag <a href={IgUrl} target='_blank' className={classes.igHashtag}>#FioreyMarian</a> en tus fotos o videos.</span> <br />
                 <span>Ya podes etiquetarnos!!</span>
             </div>
         </div>

@@ -8,13 +8,13 @@ import calendar from "../../assets/calendar.png"
 
 const buttonProps = {
     text: "Confirmar asistencia",
-    link: WeddingContext.reservationLink,
+    link: 'https://forms.gle/53FYTPnjRyMiykYc6',
 }
 
 const Reservation = () => (
     <div className={classes.rsvpContainer}>
-        <img src={calendar} className={classes.rsvpImg}/>       
-        <p className={classes.sub}>Esperamos que seas parte de esta gran celebración.<br/>¡Confirmanos tu asistencia!</p>
+        <img src={calendar} className={classes.rsvpImg} />
+        <p className={classes.sub}>Esperamos que seas parte de esta gran celebración.<br />¡Confirmanos tu asistencia!</p>
         < ButtonLink {...buttonProps} />
     </div>
 )
