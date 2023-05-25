@@ -9,25 +9,34 @@
 }
 
 .message {
-    font-size: large;
-    margin-bottom: 50px;
+    font-size: large;    
 }
 
 .carouselImg {
     width: 119px;
     height: 103px;
     margin: 0 auto;
+    margin-top: 20px;
+}
+
+.heartImg {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+
+.igHashtag {
+    color: var(--dark-beige);
 }
 
 .hashtag {
-    padding: 20px 0;
-}
-
-.igHashtag {
-    color: var(--orange);
+    color: var(--dark-beige);
 }
 
 .photos {
     width: 75%;
     height: auto;
+    border-radius: 15px;
 }

@@ -22,6 +22,7 @@ const WeddingPage = () => {
                 <Reservation />
                 <Dresscode />
                 <GiftCard />
+                <PhotosCarousel />
                 <MusicQuiz />
                 <Footer />
             </div>
