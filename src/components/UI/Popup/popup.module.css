@@ -22,7 +22,7 @@
     top: calc(100vh - 85vh);
     flex-direction: column;
     width: fit-content;
-    max-width: 70%;
+    max-width: 90%;
     margin: 0 auto;
     height: auto;
     max-height: 500px;

@@ -1,11 +1,14 @@
 @font-face {
   font-family: 'fabella';
   src: url('../../../assets/fonts/fabella-flower.woff2') format('woff2'),
-    url('../../../assets/fonts/fabella-flower.woff') format('woff');
+   url('../../../assets/fonts/fabella-flower.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Roboto:wght@100&display=swap');
 
 .header {
   width: 100%;
@@ -16,6 +19,9 @@
   position: relative;
   overflow: hidden;
   flex-direction: column;
+  background-image: url('../../../assets/background/3.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .textWrapper {
@@ -32,20 +38,11 @@
   line-height: 0.5;
 }
 
-.parallax {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-
 .name {
+  font-family: 'Fleur De Leah', cursive;
   position: relative;
   margin: 0 auto;
-  font-size: 15rem;
+  font-size: 8rem;
   color: var(--black);
   font-weight: 100;
   line-height: 0.5;
@@ -67,7 +64,7 @@
   }
 
   .name {
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: 100;
     line-height: 0.5;
   }
@@ -93,9 +90,10 @@
   }
 
   .name {
-    font-size: 20rem;
+    font-size: 10rem;
     font-weight: 100;
     line-height: 0.5;
+    margin-bottom: 15px;
   }
 
   .headline::first-letter {
@@ -111,3 +109,13 @@
     font-size: x-large;
   }
 }
+
+@media only screen and (min-width: 850px) {
+  .header {
+    background-image: url('../../../assets/background/4.png');
+    height: auto;
+    min-height: 700px;
+  }
+}
+
+

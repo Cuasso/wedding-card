@@ -20,10 +20,10 @@ const GiftCard = () => (
             {data.message}
         </p>
         <Popup text="Datos bancarios">
-            <strong>Banco: </strong><span>Banco BBVA</span><br />
-            <strong>CBU: </strong><span>758934758093475</span><br />
-            <strong>Alias: </strong><span>alias</span><br />
-            <strong>Juan Carlos</strong><br />
+            <strong>Banco: </strong><span>Banco Santander</span><br />
+            <strong>CBU: </strong><span>0720071788000001610822 </span><br />
+            <strong>Alias: </strong><span>Luna.de.miel1</span><br />
+            <strong>Mendez Mariano Nicolas</strong><br />
         </Popup>
         <p className={classes.sub} style={{ padding: "25px" }}>
             ...O dejando un sobre en el buzón que encontrarás en el salón.

@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "fiore-y-marian",
     "public": "build",
     "ignore": [
       "firebase.json",

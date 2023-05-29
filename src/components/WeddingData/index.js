@@ -19,7 +19,7 @@ const WeddingData = () => {
                     < EventContainer link={party.mapsLink} event="Celebración"
                         buttonTxt="Cómo llegar">
                         <span>{party.date}</span>
-                        <span>{party.hours} horas</span>
+                        <span>{party.hours}</span>
                         <span>{party.place}</span>
                         <span>{party.ubication}</span>
                     </EventContainer>                    
