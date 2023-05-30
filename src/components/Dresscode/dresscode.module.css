@@ -1,6 +1,7 @@
 .container {    
     margin: 0 auto;
     padding-top: 2rem;
+    display: inline-grid;
 }
 
 .body {
@@ -10,6 +11,7 @@
 .dressCodeImg {
     width: auto;
     height: 160px;
+    margin: 0 auto;
 }
 
 .colors {

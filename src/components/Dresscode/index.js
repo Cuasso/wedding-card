@@ -12,8 +12,7 @@ const Dresscode = () => {
 
     return (
         <div className={classes.container}>
-            <Title value="Código de Vestimenta:"  style={styleTitle}/> <br />            
-            <Title value="ELEGANTE"  style={styleTitle}/>
+            <Title value={"Código de Vestimenta:\n Elegante"}  style={styleTitle}/>
             <img className={classes.dressCodeImg} src={dresscodeImg} />            
             <p className={classes.body}>Les pedimos, por favor, NO usar los siguientes colores:</p>
             <div className={classes.colors}>

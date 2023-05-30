@@ -3,6 +3,7 @@
     letter-spacing: 10px;
     font-size: 35px;
     margin: 0 auto;
+    white-space: pre-line;
 }
 
 @media only screen and (max-width: 800px) {
