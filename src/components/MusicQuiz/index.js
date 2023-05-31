@@ -23,7 +23,7 @@ const MusicQuiz = () => (
         <Title value="¿Qué canciones no pueden faltar?" style={style} />
         <span className={classes.message}>
             ¡Ayudanos sugiriendo las canciones que <br />
-            pensás que no pueden faltar en la fiesta!
+            pensás que no pueden faltar!
         </span>
         < ButtonLink {...buttonProps} style={buttonProps.style} />
     </div>

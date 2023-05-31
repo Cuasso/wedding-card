@@ -26,7 +26,7 @@ const GiftCard = () => (
             <strong>Mendez Mariano Nicolas</strong><br />
         </Popup>
         <p className={classes.sub} style={{ padding: "25px" }}>
-            ...O dejando un sobre en el buzón que encontrarás en el salón.
+            O dejando un sobre en el buzón que encontrarás en el salón.
         </p>
 
     </div>
