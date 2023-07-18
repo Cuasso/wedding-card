@@ -16,15 +16,7 @@ const WeddingPage = () => {
     return (
         <Fragment>
             <Header />
-            <div className={classes.background}>
-                <Card />
-                <WeddingData />
-                <Reservation />
-                <Dresscode />
-                <GiftCard />
-                <PhotosCarousel />
-                <MusicQuiz />
-                <Footer />
+            <div style={{height:'2000px'}}>
             </div>
         </Fragment>
     )

@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap');
 @import 'components/UI/Colors/colors.module.css';
 
 .App {
   text-align: center;
   color: var(--font-color);
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: var(--font-1);
   z-index: 900;
+  background-color: var(--background);
 }
 
 * {
@@ -14,26 +16,28 @@
   box-sizing: border-box;
 }
 
+body {
+  background: url('./assets/header.jpg') no-repeat top center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
 html {
   font-size: 10px;
 }
 
 :root {
+  --background: #f9faf5;
   --max-width: 900px;
   --font-color: #495159;
-  --pink: #e1b7ab;
-  --light-pink: #e8c6bd;
-  --light-pink-two:  #e8c6bd;    
-  --coral: #E9AFA3;
-  --orange:#d08e7c;
-  --light-orange:#deaa0e6c;
-  --grey: #888888;
-  --light-grey: #e6e3e3;
-  --beige: #d5bfa3;
-  --light-beige: #e6ded0;
-  --dark-beige: #D2B48C;
-  --dark-beige-2: #B99976;
-  --dark-white: #d0d0cf;
+  --grey: #a0a893;
+  --lavanda-1: #74617e;
+  --lavanda-2: #B2A6D1;
+
+
+  --font-1: 'Noto Serif', serif;
+  --font-2: 'EB Garamond', serif;
 }
-
-
