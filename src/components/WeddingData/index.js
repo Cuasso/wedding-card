@@ -1,10 +1,7 @@
 import weddingContext from '../../stores/wedding-context'
-
 import Countdown from './Countdown'
-import EventContainer from './EventContainer'
-
 import classes from './weddingData.module.css'
-import glasses from '../../assets/glasses.png'
+import worldImage from '../../assets/world-background.png'
 
 const WeddingData = () => {
     const events = weddingContext.events
@@ -12,19 +9,11 @@ const WeddingData = () => {
 
     return (
         <div className={classes.container}>
-            <Countdown date={events.date} />
-            <img className={classes.imgWedding} src={glasses} alt="glasses"/>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-                <div className={classes.weddingEvents}>
-                    < EventContainer link={party.mapsLink} event="Celebración"
-                        buttonTxt="Cómo llegar">
-                        <span>{party.date}</span>
-                        <span>{party.hours}</span>
-                        <span>{party.place}</span>
-                        <span>{party.ubication}</span>
-                    </EventContainer>                    
-                </div>
+            <div className={classes.worldLines}>
+                <img src={worldImage} className={classes.worldImage} />
+                <Countdown date={weddingContext.events.date}/>
             </div>
+
         </div >
     )
 }

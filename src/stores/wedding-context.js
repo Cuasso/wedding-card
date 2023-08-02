@@ -10,7 +10,7 @@ const WeddingContext = {
         body: "Hay momentos en la vida que son especiales por sí solos, pero al compartirlos con personas importantes como vos, se convierten en momentos inolvidables.\n¡Te esperamos en nuestra boda!"
     },
     events: {
-        date: new Date(2023, 10, 26, 12, 0),
+        date: new Date(2024, 1, 24, 12, 0),
         party: {
             date: '26 de Noviembre de 2023',
             hours: 'Ceremonia 12:00hs\nFiesta 13:00hs',

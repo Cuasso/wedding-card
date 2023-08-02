@@ -3,19 +3,12 @@ import classes from './countdown.module.css'
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import * as dateHelper from './helper'
 
-let timerSize = 140
-
-if (window.outerWidth <= 500 && window.outerWidth > 400) {
-    timerSize = 90
-} else if (window.outerWidth <= 400) {
-    timerSize = 70
-}
-
+let timerSize = 50
 const timerProps = {
     isPlaying: true,
     size: timerSize,
     colors: [["#D2B48C"]],
-    strokeWidth: 2,
+    strokeWidth: 0,
 };
 
 const renderTime = (dimension, time) => {
@@ -43,7 +36,7 @@ const Countdown = ({ date }) => {
                 initialRemainingTime={remainingTime}
             >
                 {
-                    ({ elapsedTime }) => renderTime("Días", dateHelper.getTimeDays(daysDuration - elapsedTime))
+                    ({ elapsedTime }) => renderTime("DíAS", dateHelper.getTimeDays(daysDuration - elapsedTime))
                 }
             </CountdownCircleTimer>
             <CountdownCircleTimer
@@ -55,7 +48,7 @@ const Countdown = ({ date }) => {
                 ]}
             >
                 {
-                    ({ elapsedTime }) => renderTime("Horas", dateHelper.getTimeHours(dateHelper.daySeconds - elapsedTime))
+                    ({ elapsedTime }) => renderTime("HS", dateHelper.getTimeHours(dateHelper.daySeconds - elapsedTime))
                 }
             </CountdownCircleTimer>
             <CountdownCircleTimer
@@ -67,7 +60,7 @@ const Countdown = ({ date }) => {
                 ]}
             >
                 {
-                    ({ elapsedTime }) => renderTime("Minutos", dateHelper.getTimeMinutes(dateHelper.hourSeconds - elapsedTime))
+                    ({ elapsedTime }) => renderTime("MN", dateHelper.getTimeMinutes(dateHelper.hourSeconds - elapsedTime))
                 }
             </CountdownCircleTimer>
             <CountdownCircleTimer
@@ -79,7 +72,7 @@ const Countdown = ({ date }) => {
                 ]}
             >
                 {
-                    ({ elapsedTime }) => renderTime("Segundos", dateHelper.getTimeSeconds(elapsedTime))
+                    ({ elapsedTime }) => renderTime("SEG", dateHelper.getTimeSeconds(elapsedTime))
                 }
             </CountdownCircleTimer>
         </div>

@@ -16,6 +16,7 @@ const WeddingPage = () => {
     return (
         <Fragment>
             <Header />
+            <WeddingData />
             <div style={{height:'2000px'}}>
             </div>
         </Fragment>

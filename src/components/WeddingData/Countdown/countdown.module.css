@@ -1,4 +1,9 @@
 .countdown {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+
     display: flex;
     margin: 0 auto;
     max-width: 80%;
@@ -8,15 +13,15 @@
 }
 
 .timeWrapper {
-    color: var(--grey);
+    color: var(--lavanda-1);
 }
 
 @media only screen and (max-width: 400px) {
     .time {
-        font-size: 20px;
+        font-size: 25px;
     }
     .dimension {
-        font-size: 12px;
+        font-size: 17px;
     }
 }
 
